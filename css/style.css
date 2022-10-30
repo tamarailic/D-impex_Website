@@ -12,7 +12,7 @@
     --Orange:#ff6404;
     --LighterOrange:#f67729;
     --Blue:#0095f4;
-    --DarkerBlue: #0b4da2;
+    --DarkerBlue: #145ec0;
   }
   
 body {
@@ -25,17 +25,21 @@ body {
 }
 
 nav{
+    background-color: var(--DarkGray);
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 1fr 10fr 1fr;
     padding: 0 1%;
 }
 
 nav>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style:none;
-    text-align: right;
 }
 
 nav>ul>li{
+    color: var(--LightGray);
     display: inline-block;
     padding: 0.25rem 0.5rem;
 }
@@ -53,28 +57,40 @@ nav>ul>li{
 
 section#hero{
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
 }
 
 .hero_description_div{
-    padding: 100px 400px 100px 30px ;
+    margin-right: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hero_description_div h1{
-    font-size: xx-large;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0;
 }
 .hero_description_div h2{
     color: var(--DarkerGrayIntro);
     font-weight: lighter;
-    font-size: medium;
+    font-size: 1.2rem;
+    margin: 5vh 0;
 }
 
 .gradient_div{
-    height: 500px;
-    background: linear-gradient(180deg, rgba(1, 149, 244, 1) 0%, rgba(11, 77, 162, 1) 100%);
+    /* background: var(--Blue); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient_div img{
+    width: 100%;
+    margin: 5rem 0;
 }
 
 #cards{
