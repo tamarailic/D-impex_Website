@@ -6,9 +6,12 @@
 
 :root {
     --DarkGray: #272729;
-    --LightGray: #f4f4f4;
+    --LightGray: #f7f7f7;
+    --DarkGrayIntro:#adadad;
+    --DarkerGrayIntro:#787878;
     --Orange:#ff6404;
     --Blue:#0095f4;
+    --DarkerBlue: #147dbf;
   }
   
   body {
@@ -32,12 +35,19 @@
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    background-image: url('../VideoNadzor/video-nadzor.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
     height: 500px;
+}
+
+.card_intro_dark_background{
+    color: var(--DarkGrayIntro);
+}
+
+.card_dark_background{
+    color: var(--LightGray);
 }
 
 .card_footer{
@@ -49,7 +59,7 @@
 .card_intro{
     font-size: 12px;
     line-height: 1.5;
-    color:#adadad;
+    color:var(--DarkerGrayIntro);
     margin-top: 0;
     margin-bottom: 8px;
     text-align: center;
@@ -59,10 +69,9 @@
     margin-top: 0;
     font-size: 32px;
     margin-bottom: 16px;
-    font-weight: 500;
+    font-weight: bold;
     text-align: center;
     line-height: 1.2;
-    color: #f7f7f7;
 }
 
 .card_description{
@@ -70,6 +79,63 @@
     font-size: 16px;
     margin-bottom: 24px;
     line-height: 1.5;
-    color:#f7f7f7;
     text-align: center;
+}
+
+.card_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.installation_button{
+    background-color: var(--Blue);
+    border-color: var(--Blue);
+    color: var(--DarkGray);
+}
+
+.btn{
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 9px 15px;
+    font-size: 0.875rem;
+    border-radius: 50rem;
+    margin-right: 24px;
+    transition: all .15s ease-in-out;
+}
+
+.installation_button:hover{
+    background-color: var(--DarkerBlue);
+    border-color: var(--DarkerBlue);
+}
+
+#video-nadzor{
+    background-image: url('../VideoNadzor/video-nadzor.jpg');
+}
+
+#alarm-sistemi{
+    background-image: url('../AlarmniSistemi/alarmni-sistemi.jpg');
+}
+
+#motori-za-kapije{
+    background-image: url('../MotoriZaKapije/motori-za-kapije.jpg');
+}
+
+#interfoni{
+    background-image: url('../Interfoni/interfon-sistemi.jpg');
+}
+
+#kontrola-pristupa{
+    background-image: url('../KontrolaPristupa/kontrola-pristupa.jpg');
+}
+
+#bazeni{
+    background-image: url('../AlarmniSistemi/alarmni-sistemi.jpg');
 }
