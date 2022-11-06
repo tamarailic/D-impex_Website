@@ -221,3 +221,58 @@ section#hero{
 #bazeni{
     background-image: url('../Bazeni/bazeni.jpg');
 }
+
+.stats{
+    width: 100%;
+    margin: auto;
+    padding: 2% 10%;
+    background-color: var(--Orange);
+}
+.stats>h3{
+    color: var(--LightGray);
+    text-align: center;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0;
+    padding: 0;
+}
+
+.stats_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: var(--LightGray);
+}
+
+.stat_item{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+
+.icon_container_wrap{
+    display: inline-block;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.icon_container{
+    width: 100%;
+    height: 100%;
+}
+
+.stat_content{
+    display: inline-block;
+    font-size: 2.2rem;
+    margin: 0;
+    margin-bottom: -50px;
+    padding: 0;
+    font-stretch: extra-condensed;    
+}
+
+.stat_text{
+    margin: 0;
+    padding: 0;
+}
