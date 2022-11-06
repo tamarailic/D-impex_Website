@@ -278,3 +278,27 @@ section#hero{
     margin: 0;
     padding: 0;
 }
+
+#call-to-action{
+    background-color: var(--Orange);
+    padding: 5rem 5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fcfcfc;
+}
+
+#call-to-action h4{
+    font-size: 2.4rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.white_button{
+    font-size: 1.4rem;
+    padding: 20px 30px;
+    background-color: #fcfcfc;
+    color: var(--DarkGray);
+}
