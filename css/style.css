@@ -269,7 +269,8 @@ section#hero{
     margin: 0;
     margin-bottom: -50px;
     padding: 0;
-    font-stretch: extra-condensed;    
+    /* font-stretch: extra-condensed;     */
+    transform: scale(1, 1.15);
 }
 
 .stat_text{
