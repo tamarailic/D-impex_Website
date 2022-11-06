@@ -71,15 +71,15 @@ section#hero{
 }
 
 .hero_description_div h1{
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     line-height: 1.2;
     margin: 0;
 }
 .hero_description_div h2{
     color: var(--DarkerGrayIntro);
     font-weight: lighter;
-    font-size: 1.2rem;
-    margin: 5vh 0;
+    font-size: 1.4rem;
+    margin: 2vh 0;
 }
 
 .gradient_div{
@@ -165,11 +165,6 @@ section#hero{
     color: var(--DarkGray);
 }
 
-.call_button{
-    background-color: var(--Orange);
-    border-color: var(--Orange);
-    color: var(--DarkGray);
-}
 
 .btn{
     display: inline-block;
@@ -183,9 +178,16 @@ section#hero{
     border: 1px solid transparent;
     padding: 9px 15px;
     font-size: 0.875rem;
-    border-radius: 50rem;
+    border-radius: 8px;
     margin-right: 24px;
     transition: all .15s ease-in-out;
+}
+
+.call_button{
+    background-color: var(--Orange);
+    border-color: var(--Orange);
+    color: var(--DarkGray);
+    font-size: 1.1rem;
 }
 
 .installation_button:hover{
