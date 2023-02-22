@@ -6,7 +6,7 @@
     --DarkGray: #272729;
     --AlmostWhite: #ededed;
     --DarkGrayIntro: #adadad;
-    --DarkerGrayIntro: rgba(39, 39, 41, 0.6);
+    --DarkerGrayIntro: #181818;
     --Orange: #ff6404;
     --Blue: #0095f4;
     --DarkerBlue: #145ec0;
@@ -41,11 +41,12 @@ nav>ul {
     list-style: none;
 }
 
-nav>ul>li {
+nav>ul>li>a {
     color: var(--AlmostWhite);
     display: inline-block;
     padding: 0.25rem 0.75rem;
     font-size: 1rem;
+    text-decoration: none;
 }
 
 .logo_div {
@@ -563,60 +564,52 @@ footer p {
 
 .checkbox_container_wrap {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-right: 10px;
 }
 
 .checkbox_list {
     padding: 0;
-}
-
-/* Link */
-
-.links_section {
-    width: 100%;
-    margin: auto;
-    background-color: var(--DarkerBlue);
-}
-
-.all_links_container {
-    display: flex;
-    color: var(--AlmostWhite);
-    padding: 20px 0;
-    align-items: center;
-    justify-content: center;
-}
-
-.all_links_container a {
-    text-decoration: none;
-    color: var(--AlmostWhite);
-}
-
-.link_container {
-    margin-right: 5rem;
-}
-
-.small_icon_container_wrap {
-    display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    margin-right: 10px;
+    margin: 20px auto 50px;
+    margin-top: 0;
 }
 
 /* Product informations */
 
-.product_info {
-    width: 80%;
+.hero_product {
+    width: 70%;
     margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.hero_product h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.product_info {
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
 }
 
 .product_info h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    font-weight: 500;
 }
 
 .product_info_container {
     padding-top: 1rem;
+}
+
+.product_info_container p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--DarkerGrayIntro);
+    text-align: justify;
 }
 
 .product_info_cards {
@@ -626,8 +619,8 @@ footer p {
 }
 
 .product_info_card {
-    background-color: #adadad;
-    margin-top: 1rem;
+    background-color: white;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -638,11 +631,16 @@ footer p {
     border-radius: 24px;
     text-align: center;
     padding: 1rem;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2)
+}
+
+.product_info_card>p {
+    text-align: center;
 }
 
 .product_info_col {
     width: 33.33%;
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
 #col1 {
