@@ -552,3 +552,107 @@ footer p {
 .contact-details a:hover {
     color: var(--DarkerBlue);
 }
+
+/* Video nadzor page */
+
+.checkbox-li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox_container_wrap {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.checkbox_list {
+    padding: 0;
+}
+
+/* Link */
+
+.links_section {
+    width: 100%;
+    margin: auto;
+    background-color: var(--DarkerBlue);
+}
+
+.all_links_container {
+    display: flex;
+    color: var(--AlmostWhite);
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.all_links_container a {
+    text-decoration: none;
+    color: var(--AlmostWhite);
+}
+
+.link_container {
+    margin-right: 5rem;
+}
+
+.small_icon_container_wrap {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 10px;
+}
+
+/* Product informations */
+
+.product_info {
+    width: 80%;
+    margin: auto;
+}
+
+.product_info h2 {
+    font-size: 2.5rem;
+}
+
+.product_info_container {
+    padding-top: 1rem;
+}
+
+.product_info_cards {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.product_info_card {
+    background-color: #adadad;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.product_info_col {
+    width: 33.33%;
+    padding-right: 1rem;
+}
+
+#col1 {
+    transform: translate3d(0px, 15.5577px, 0px);
+}
+
+#col2 {
+    transform: translate3d(0px, -12.4461px, 0px);
+}
+
+#col3 {
+    transform: translate3d(0px, 31.1154px, 0px);
+}
