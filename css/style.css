@@ -320,10 +320,28 @@ h3 {
   padding: 20px 30px;
   background-color: var(--AlmostWhite);
   color: var(--DarkGray);
+  align-self: center;
+}
+
+.orange_button {
+  font-size: 1.25rem;
+  margin-left: 20px;
+  padding: 20px 30px;
+  background-color: var(--Orange);
+  color: var(--AlmostWhite);
+  text-decoration: none;
+  align-self: center;
+}
+
+.call-sale-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .extra-space {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 /* Edge Button/Link */
