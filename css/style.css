@@ -612,6 +612,10 @@ footer p {
     text-align: justify;
 }
 
+.product_info_container a {
+    color: var(--DarkerBlue);
+}
+
 .product_info_cards {
     padding-top: 4rem;
     display: flex;
