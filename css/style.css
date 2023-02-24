@@ -193,6 +193,10 @@ h3 {
   filter: var(--ShadowLight);
 }
 
+.card a {
+  text-decoration: none;
+}
+
 .card_dark_background {
   color: var(--AlmostWhite);
 }
@@ -612,7 +616,7 @@ footer p {
 }
 
 .product_info_container a {
-    color: var(--DarkerBlue);
+  color: var(--DarkerBlue);
 }
 
 .product_info_cards {
