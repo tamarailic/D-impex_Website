@@ -76,6 +76,32 @@ nav>ul>li>a {
   align-items: center;
 }
 
+.main-call-to-action {
+  background-color: var(--Orange);
+  border-radius: 8px;
+  font-size: 1.4rem;
+  color: var(--AlmostWhite);
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.secundary-call-to-action {
+  background-color: var(--DarkerGrayIntro);
+  border-radius: 8px;
+  font-size: 1.4rem;
+  color: var(--AlmostWhite);
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.push-up {
+  margin-top: 30px;
+}
+
 /* Hero */
 
 section#hero {
