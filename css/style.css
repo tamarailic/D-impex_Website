@@ -110,6 +110,34 @@ section#hero {
   width: 100%;
   margin: auto;
   padding: 6vh 10%;
+  background-repeat: no-repeat;
+  background-position: c;
+  background-size: cover;
+  min-height: 62vh;
+}
+
+.hero-video-surveillance {
+  background-image: url('../VideoNadzor/kamere-za-kucu.jpg');
+}
+
+.hero-alarm {
+  background-image: url('../AlarmniSistemi/alarmi.jpg');
+}
+
+.hero-gate-motors {
+  background-image: url('../MotoriZaKapije/motori-za-otvaranje-kapija.jpg');
+}
+
+.hero-intercom {
+  background-image: url('../Interfoni/interfoni-novi-sad.jpg');
+}
+
+.hero-access-control {
+  background-image: url('../KontrolaPristupa/kontrola-pristupa-evidencija-radnog-vremena.jpg');
+}
+
+.hero-swimmingpool {
+  background-image: url('../Bazeni/dvorisni-bazeni-ugradnja.jpg');
 }
 
 .hero_description_div {
@@ -515,7 +543,7 @@ footer {
 footer p {
   text-align: center;
   margin: 0;
-  padding: 0 0 20px;
+  padding: 15px 0;
 }
 
 #footer-grid {
@@ -556,7 +584,7 @@ footer p {
 }
 
 .footer-box {
-  min-height: 300px;
+  min-height: 400px;
   padding: 0 50px;
 }
 
@@ -645,9 +673,9 @@ footer p {
 .hero-video-surveillance {
   background-image: url('../VideoNadzor/kamere-za-kucu.jpg');
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: c;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 62vh;
 }
 
 .hero_product {
@@ -748,4 +776,10 @@ footer p {
 
 #col3 {
   transform: translate3d(0px, 31.1154px, 0px);
+}
+
+/* Extra info */
+
+.extra-info {
+  font-size: 0.9rem;
 }
