@@ -970,6 +970,11 @@ footer p {
     width: 95%;
   }
 
+  .social-media ul {
+    text-align: left;
+    margin: auto;
+  }
+
   /* Nav bar mobile */
 
   #nav-mobile {
@@ -1219,7 +1224,7 @@ footer p {
   }
 
   .offset-on-overlap {
-    margin-top: 150px;
+    margin-top: 150px !important;
   }
 
   #call-to-action {
