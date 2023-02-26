@@ -112,6 +112,10 @@ nav>ul>li>a {
   display: none;
 }
 
+.hide {
+  pointer-events: none;
+}
+
 /* Hero */
 
 section#hero {
@@ -121,7 +125,7 @@ section#hero {
   margin: auto;
   padding: 6vh 10%;
   background-repeat: no-repeat;
-  background-position: c;
+  background-position: center;
   background-size: cover;
   min-height: 62vh;
 }
@@ -700,7 +704,7 @@ footer p {
 .hero-video-surveillance {
   background-image: url('../VideoNadzor/kamere-za-kucu.jpg');
   background-repeat: no-repeat;
-  background-position: c;
+  background-position: center;
   background-size: cover;
   min-height: 62vh;
 }
@@ -714,6 +718,11 @@ footer p {
 
 .hero_product h1 {
   font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.hero_product p {
+  font-size: 1.1rem;
   margin-bottom: 0;
 }
 
@@ -839,6 +848,13 @@ footer p {
     font-size: 1.2rem;
   }
 
+  .product_info {
+    width: 80%;
+    margin: 0 auto 40px;
+    padding: 1rem;
+  }
+
+
 }
 
 @media (max-width:1200px) {
@@ -877,6 +893,10 @@ footer p {
     font-size: 2rem;
   }
 
+  .product_info {
+    width: 90%;
+  }
+
 }
 
 /* Header */
@@ -885,7 +905,7 @@ footer p {
   section#hero {
     padding: 1vh 10%;
     background-repeat: no-repeat;
-    background-position: c;
+    background-position: center;
     background-size: cover;
     min-height: 50vh;
   }
@@ -944,6 +964,10 @@ footer p {
 
   .link-effect-14 a {
     display: none;
+  }
+
+  .product_info {
+    width: 95%;
   }
 
   /* Nav bar mobile */
@@ -1067,6 +1091,10 @@ footer p {
     transition-delay: 0.07s;
   }
 
+  #nav-mobile .header ul.menu li.menu-item:nth-child(8) {
+    transition-delay: 0.01s;
+  }
+
   #nav-mobile .header ul.menu li.menu-item a {
     display: block;
     position: relative;
@@ -1079,7 +1107,7 @@ footer p {
   }
 
   #nav-mobile .header.menu-opened {
-    height: 450px;
+    height: 490px;
     background-color: var(--DarkGray);
     transition: all 0.3s ease-in, background 0.5s ease-in;
     transition-delay: 0.25s;
@@ -1135,6 +1163,10 @@ footer p {
     transition-delay: 0.69s;
   }
 
+  #nav-mobile .header.menu-opened ul.menu li.menu-item:nth-child(8) {
+    transition-delay: 0.76s;
+  }
+
 }
 
 @media (max-width:900px) {
@@ -1153,15 +1185,7 @@ footer p {
 
   section#hero {
     grid-template-columns: 1fr;
-    padding: 6vh 10%;
-    min-height: 62vh;
-  }
-
-  section#hero {
     padding: 4vh 10% 0;
-    background-repeat: no-repeat;
-    background-position: c;
-    background-size: cover;
     min-height: 0;
   }
 
@@ -1180,6 +1204,10 @@ footer p {
     margin: 1vh 0 3vh;
   }
 
+  .hero_product {
+    margin: 0;
+  }
+
   .gradient_div>div {
     width: 60vw;
   }
@@ -1190,8 +1218,12 @@ footer p {
     margin: 4%;
   }
 
-  #call-to-action {
+  .offset-on-overlap {
     margin-top: 150px;
+  }
+
+  #call-to-action {
+    padding: 5%;
   }
 
   .card_title {
@@ -1204,6 +1236,48 @@ footer p {
 
   h3 {
     font-size: 1.6rem;
+  }
+
+  .hero_product h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  .product_info h2 {
+    font-size: 2.5rem;
+  }
+
+  .product_info_cards {
+    padding-top: 0;
+    flex-direction: column;
+  }
+
+  .product_info_col {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .product_info {
+    width: 90%;
+    margin: 0 auto 40px;
+    padding: 1rem;
+  }
+
+  .product_info_container p {
+    margin-bottom: 0;
+  }
+
+  #col1 {
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  #col2 {
+    transform: translate3d(0px, -30px, 0px);
+  }
+
+  #col3 {
+    transform: translate3d(0px, -30px, 0px);
   }
 
 }
@@ -1307,4 +1381,15 @@ footer p {
   #footer-grid li {
     font-size: 1rem;
   }
+
+  .push-up {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-call-to-action,
+  .secundary-call-to-action {
+    margin: 10px auto;
+  }
+
 }
