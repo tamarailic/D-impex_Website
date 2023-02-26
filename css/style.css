@@ -333,6 +333,14 @@ h3 {
   transition: all 0.25s ease-in-out;
 }
 
+.sale_button {
+  color: var(--DarkerGrayIntro);
+}
+
+.card_dark_background .sale_button {
+  color: var(--AlmostWhite);
+}
+
 .main_button {
   background-color: var(--Orange);
   border-color: var(--Orange);
@@ -530,6 +538,11 @@ h3 {
   opacity: 1;
   right: 5px;
   bottom: 5px;
+}
+
+.links a {
+  color: var(--DarkerGrayIntro);
+  text-decoration: none;
 }
 
 /* Footer */
