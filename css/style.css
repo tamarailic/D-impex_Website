@@ -26,9 +26,12 @@ body {
 
 /* Navigation Bar */
 
+#nav-desktop {
+  display: grid;
+}
+
 nav {
   background-color: var(--DarkGray);
-  display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   padding: 10px 10%;
   filter: var(--ShadowLight);
@@ -795,4 +798,134 @@ footer p {
 
 .extra-info {
   font-size: 0.9rem;
+}
+
+@media (max-width:1400px) {
+  nav {
+    grid-template-columns: 1fr 8fr 1fr;
+    padding: 10px 2%;
+  }
+
+  .footer-box {
+    padding: 0 30px;
+  }
+
+  .stats {
+    padding: 2%;
+  }
+
+  .stat_content {
+    font-size: 2rem;
+  }
+
+  .stat_text {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (max-width:1200px) {
+  nav {
+    grid-template-columns: 1fr 8fr 1fr;
+    padding: 10px 1%;
+  }
+
+  nav>ul>li>a {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .footer-box {
+    min-height: 400px;
+    padding: 0 20px;
+  }
+
+  .hero_description_div h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero_description_div h2 {
+    font-size: 1.2rem;
+    margin: 1vh 0 6vh;
+  }
+
+  .stats_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat_item {
+    margin: 20px auto;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+}
+
+/* Header */
+@media (max-width:1069px) {
+  #nav-desktop {
+    display: none;
+  }
+
+  .hero_description_div h1 {
+    font-size: 2rem;
+  }
+
+  .hero_description_div h2 {
+    font-size: 1.1rem;
+    margin: 1vh 0 6vh;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  #footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 6% 4% 3%;
+    text-align: center;
+  }
+
+  #footer-grid h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .footer-box {
+    padding: 50px;
+  }
+
+  .tablet-extra {
+    border-right: none;
+  }
+
+  .social-media li {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+  }
+
+}
+
+@media (max-width:900px) {
+
+  .hero_description_div h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero_description_div h2 {
+    font-size: 1rem;
+    margin: 1vh 0 5vh;
+  }
+}
+
+@media (max-width:768px) {
+
+  section#hero {
+    grid-template-columns: 1fr;
+    padding: 6vh 10%;
+    min-height: 62vh;
+  }
 }
