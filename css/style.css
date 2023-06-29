@@ -338,13 +338,11 @@ h3 {
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  user-select: none;
-  border: 1px solid transparent;
   padding: 9px 18px;
   font-size: 0.9rem;
-  border-radius: 8px;
+  border-radius: 6px;
   margin-right: 24px;
-  transition: all 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }
 
 .sale_button {
@@ -356,8 +354,7 @@ h3 {
 }
 
 .main_button {
-  background-color: var(--Orange);
-  border-color: var(--Orange);
+  background-color: var(--DarkerBlue);
   color: var(--AlmostWhite);
   font-size: 1.1rem;
   font-weight: normal;
@@ -366,13 +363,11 @@ h3 {
 
 .installation_button {
   background-color: var(--DarkerBlue);
-  border-color: var(--DarkerBlue);
   color: var(--AlmostWhite);
 }
 
 .installation_button:hover {
   background-color: var(--Blue);
-  border-color: var(--Blue);
 }
 
 #video-nadzor {
