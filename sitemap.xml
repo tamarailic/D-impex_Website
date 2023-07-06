@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://www.d-impex.co.rs/</loc>
+  <lastmod>2023-07-06T18:56:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/index.html</loc>
+  <lastmod>2023-07-06T18:56:42+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/videonadzor.html</loc>
+  <lastmod>2023-07-06T18:56:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/alarmi.html</loc>
+  <lastmod>2023-07-06T18:56:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/motornekapije.html</loc>
+  <lastmod>2023-07-06T18:56:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/interfoni.html</loc>
+  <lastmod>2023-07-06T18:56:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/kontrolapristupa.html</loc>
+  <lastmod>2023-07-06T18:56:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/bazeni.html</loc>
+  <lastmod>2023-07-06T18:56:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/kontakti.html</loc>
+  <lastmod>2023-07-06T18:56:42+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/Dokumenta/EVIDENCIJA.pdf</loc>
+  <lastmod>2023-06-29T22:28:11+00:00</lastmod>
+  <priority>0.01</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/Dokumenta/PDV_PIB.pdf</loc>
+  <lastmod>2023-06-29T22:28:12+00:00</lastmod>
+  <priority>0.01</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/Dokumenta/APR.pdf</loc>
+  <lastmod>2023-06-29T22:28:12+00:00</lastmod>
+  <priority>0.01</priority>
+</url>
+<url>
+  <loc>https://www.d-impex.co.rs/Dokumenta/opsti_garantni_uslovi.pdf</loc>
+  <lastmod>2023-06-29T22:28:12+00:00</lastmod>
+  <priority>0.01</priority>
+</url>
+
+
+</urlset>
