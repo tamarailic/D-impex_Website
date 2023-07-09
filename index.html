@@ -40,6 +40,59 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "image": "https://www.d-impex.co.rs/img/d-impex.png",
+        "name": "D-impex",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Branimira Ćosića 44",
+          "addressLocality": "Novi Sad, Serbia",
+          "postalCode": "21000",
+          "addressCountry": "RS"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.258920,
+          "longitude": 19.830940
+        },
+        "url": "https://www.d-impex.co.rs/",
+        "telephone": "021 66-15-799",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "07:30",
+            "closes": "15:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:30",
+            "closes": "10:30"
+          }
+        ],
+        "areaServed": "Serbia",
+        "email": "office@d-impex.co.rs",
+        "logo": "https://www.d-impex.co.rs/img/d-impex.png",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "#main_title",
+            "#about_the_page",
+            "#contact_us"
+          ]
+        }
+      }
+      </script>
 </head>
 
 <body>
@@ -93,10 +146,10 @@
     <section id="hero">
       <div class="hero_description_div">
         <div>
-          <h1>
+          <h1 id="main_title">
             Sigurnosni sistemi visokog kvaliteta <u>prodaja</u> i <u>ugradnja</u>
           </h1>
-          <h2>
+          <h2 id="about_the_page">
             Imate želju da zaštitite vaš dom ili poslovni prostor, a ne znate
             odakle da počnete? Došli ste na pravo mesto.
           </h2>
@@ -245,7 +298,7 @@
 
     <section id="call-to-action" class="offset-on-overlap">
       <div>
-        <h3>Pozovite nas, tu smo da Vam odgovorimo na sva pitanja</h3>
+        <h3 id="contact_us">Pozovite nas, tu smo da Vam odgovorimo na sva pitanja</h3>
         <a class="extra-space btn white_button" href="tel:021 66-15-799">021 66-15-799</a>
       </div>
     </section>
