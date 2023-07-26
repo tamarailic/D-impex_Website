@@ -1,5 +1,10 @@
-document.querySelector('.hamburger').addEventListener('click', function (e) {
-    document.querySelector('.hamburger').classList.toggle('open');
+(function () {
+    let burger = document.querySelector('.burger-container');
+    let header = document.querySelector('.header');
+    let menu = document.querySelector('.menu')
 
-    e.preventDefault();
-});
+    burger.onclick = function () {
+        header.classList.toggle('menu-opened');
+        menu.classList.toggle('hide');
+    }
+}());
