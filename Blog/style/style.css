@@ -8,7 +8,7 @@
     --background-color: #fcfcfc;
     --accent-color: #0095f4;
     --accent-dark-color: #145ec0;
-    --accent-light-color: #ff6404;
+    --accent-light-color: #FDEACD;
     --bullet-list-decoration-unicode: "\25A0";
     --meta-list-decoration-unicode: " \2022 ";
 
@@ -116,6 +116,29 @@ nav>ul>li>a {
 
 .push-up {
     margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 9px 18px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    margin-right: 24px;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.main_button {
+    background-color: var(--DarkerBlue);
+    color: var(--AlmostWhite);
+    font-size: 1.1rem;
+    font-weight: normal;
+    filter: var(--ShadowLight);
 }
 
 /* Nav mobile */
