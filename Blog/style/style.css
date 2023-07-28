@@ -151,6 +151,10 @@ nav>ul>li>a {
     pointer-events: none;
 }
 
+.selected-item a {
+    color: var(--accent-color);
+}
+
 
 /* Blog specific */
 
@@ -874,41 +878,45 @@ aside a:hover {
 
     #nav-mobile .header ul.menu li.menu-item {
         border-bottom: 1px solid var(--DarkGrayIntro);
-        margin-top: 5px;
+        margin-top: 3px;
         transform: scale(1.15) translateY(-30px);
         opacity: 0;
         transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     }
 
     #nav-mobile .header ul.menu li.menu-item:nth-child(1) {
-        transition-delay: 0.49s;
+        transition-delay: 0.56s;
     }
 
     #nav-mobile .header ul.menu li.menu-item:nth-child(2) {
-        transition-delay: 0.42s;
+        transition-delay: 0.49s;
     }
 
     #nav-mobile .header ul.menu li.menu-item:nth-child(3) {
-        transition-delay: 0.35s;
+        transition-delay: 0.42s;
     }
 
     #nav-mobile .header ul.menu li.menu-item:nth-child(4) {
-        transition-delay: 0.28s;
+        transition-delay: 0.35s;
     }
 
     #nav-mobile .header ul.menu li.menu-item:nth-child(5) {
-        transition-delay: 0.21s;
+        transition-delay: 0.28s;
     }
 
     #nav-mobile .header ul.menu li.menu-item:nth-child(6) {
-        transition-delay: 0.14s;
+        transition-delay: 0.21s;
     }
 
     #nav-mobile .header ul.menu li.menu-item:nth-child(7) {
-        transition-delay: 0.07s;
+        transition-delay: 0.14s;
     }
 
     #nav-mobile .header ul.menu li.menu-item:nth-child(8) {
+        transition-delay: 0.07s;
+    }
+
+    #nav-mobile .header ul.menu li.menu-item:nth-child(9) {
         transition-delay: 0.01s;
     }
 
@@ -924,7 +932,7 @@ aside a:hover {
     }
 
     #nav-mobile .header.menu-opened {
-        height: 490px;
+        height: 510px;
         background-color: var(--DarkGray);
         transition: all 0.3s ease-in, background 0.5s ease-in;
         transition-delay: 0.25s;
@@ -982,6 +990,10 @@ aside a:hover {
 
     #nav-mobile .header.menu-opened ul.menu li.menu-item:nth-child(8) {
         transition-delay: 0.76s;
+    }
+
+    #nav-mobile .header.menu-opened ul.menu li.menu-item:nth-child(9) {
+        transition-delay: 0.83s;
     }
 }
 
