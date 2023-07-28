@@ -625,7 +625,7 @@ article.blog-wide {
     background: var(--accent-dark-color);
     color: var(--background-color);
     text-transform: uppercase;
-    box-shadow: 5px 15px 40px rgba(0, 201, 224, .2);
+    box-shadow: 5px 5px 20px rgba(0, 201, 224, .2);
     border: 0;
     font-size: 1rem;
     letter-spacing: .15em;
