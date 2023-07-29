@@ -243,7 +243,7 @@ article.blog-wide {
 }
 
 .blog a {
-    color: var(--accent-color);
+    color: var(--accent-dark-color);
     transition: color .1s ease-in-out;
 }
 
@@ -932,7 +932,7 @@ aside a:hover {
     }
 
     #nav-mobile .header.menu-opened {
-        height: 510px;
+        height: 330px;
         background-color: var(--DarkGray);
         transition: all 0.3s ease-in, background 0.5s ease-in;
         transition-delay: 0.25s;
