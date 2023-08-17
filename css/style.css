@@ -809,6 +809,112 @@ footer p {
   transform: translate3d(0px, 31.1154px, 0px);
 }
 
+/* Blog section */
+
+#blog-intro,
+#youtube {
+  padding: 96px 0;
+  background: var(--gradient, linear-gradient(46deg, rgba(0, 122, 255, 0.40) 0%, rgba(170, 232, 244, 0.40) 100%));
+}
+
+.blog-intro-inner {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.youtube-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.youtube-grid iframe {
+  width: 448px;
+  height: 252px;
+}
+
+#youtube p {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -1.4px;
+  line-height: 60px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.card-image-container {
+  width: 48px;
+}
+
+.card-image-container img {
+  width: 100%;
+}
+
+.blog-intro-inner>div {
+  padding: 32px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.blog-card {
+  border-radius: 8px;
+}
+
+.contact-card {
+  border-radius: 8px 8px 160px 8px;
+}
+
+.semi-big {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -1.1px;
+  line-height: 40px;
+}
+
+#blog-intro a,
+#youtube a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: underline;
+  color: var(--DarkerGrayIntro);
+  transition: text-decoration-color .2s ease-in-out;
+  text-decoration-color: transparent;
+}
+
+#youtube a {
+  width: 90%;
+  margin: 40px auto 0;
+  display: block;
+}
+
+#blog-intro a:hover,
+#youtube a:hover {
+  text-decoration-color: var(--DarkerGrayIntro);
+}
+
+#blog-intro span,
+#youtube span {
+  transition: margin-left .2s ease-in-out;
+}
+
+#blog-intro a:hover span,
+#youtube a:hover span {
+  margin-left: 5px;
+}
+
 /* Extra info */
 
 .extra-info {
@@ -818,6 +924,13 @@ footer p {
 @media (max-width:1700px) {
   .card {
     height: 500px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .youtube-grid iframe {
+    width: 358.4px;
+    height: 201.6px;
   }
 }
 
@@ -889,6 +1002,16 @@ footer p {
 
   .product_info {
     width: 90%;
+  }
+
+  .youtube-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .youtube-grid iframe {
+    width: 448px;
+    height: 252px;
   }
 
 }
@@ -967,6 +1090,44 @@ footer p {
   .social-media ul {
     text-align: left;
     margin: auto;
+  }
+
+  .youtube-grid {
+    gap: 25px;
+  }
+
+  .youtube-grid iframe {
+    width: 336px;
+    height: 189px;
+  }
+
+  #youtube p {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  #blog-intro {
+    padding: 70px 0;
+  }
+
+  .blog-intro-inner {
+    display: flex;
+    width: 90%;
+    gap: 50px;
+  }
+
+  .blog-intro-inner>div {
+    min-height: 320px;
+  }
+
+  #blog-intro a {
+    margin-top: auto;
+  }
+
+  .semi-big {
+    font-size: 20px;
+    line-height: 1.6;
   }
 
   /* Nav bar mobile */
@@ -1279,6 +1440,58 @@ footer p {
     transform: translate3d(0px, -30px, 0px);
   }
 
+  .youtube-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .youtube-grid iframe {
+    width: 336px;
+    height: 189px;
+  }
+
+  #youtube p {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  #blog-intro {
+    padding: 50px 0;
+  }
+
+  .blog-intro-inner {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 32px;
+  }
+
+  .blog-intro-inner>div {
+    min-height: auto;
+    max-width: 80%;
+  }
+
+  #blog-intro a {
+    margin-top: auto;
+  }
+
+  .blog-card {
+    border-radius: 8px;
+  }
+
+  .contact-card {
+    border-radius: 8px;
+  }
+
+  .semi-big {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
 }
 
 @media (max-width:650px) {
@@ -1391,4 +1604,22 @@ footer p {
     margin: 10px auto;
   }
 
+  .blog-intro-inner>div {
+    min-height: auto;
+    max-width: 90%;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .youtube-grid iframe {
+    width: 252px;
+    height: 141.75px;
+  }
+
+  #youtube p {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
 }
