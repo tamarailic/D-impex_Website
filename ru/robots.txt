@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://en.d-impex.co.rs/sitemap.xml
+Sitemap: https://ru.d-impex.co.rs/sitemap.xml
