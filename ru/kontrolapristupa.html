@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 
@@ -15,16 +15,16 @@
 
   <meta charset="utf-8">
   <meta name="description"
-    content="Enhance Security with D-Impex Access Control and Work Time Records in Novi Sad, Serbia. Learn About Dimpex's Cutting-Edge Solutions for businesses">
+    content="Повысьте безопасность с помощью контроля доступа и учета рабочего времени D-Impex в Нови-Саде, Сербия. Узнайте о передовых решениях Dimpex для бизнеса">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/icon.png">
-  <meta property="og:title" content="Access Control and Employee Working Time Systems - Serbia">
+  <meta property="og:title" content="Системы контроля доступа и рабочего времени сотрудников - Сербия">
   <meta property="og:type" content="website">
   <meta property="og:description"
-    content="Enhance Security with D-Impex Access Control and Work Time Records in Novi Sad, Serbia. Learn About Dimpex's Cutting-Edge Solutions for businesses">
+    content="Повысьте безопасность с помощью контроля доступа и учета рабочего времени D-Impex в Нови-Саде, Сербия. Узнайте о передовых решениях Dimpex для бизнеса">
   <meta property="og:site_name" content="D-impex">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Access Control and Employee Working Time Systems - Serbia</title>
+  <title>Системы контроля доступа и рабочего времени сотрудников - Сербия</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,24 +37,27 @@
   <header>
     <nav id="nav-desktop">
       <div class="logo_div">
-        <a href="index.html"><img width="142.5" height="27.75" src="img/d-impex.webp" alt="D-impex"></a>
+        <a href="index.html"><img width="128.25" height="24.975" src="img/d-impex.webp" alt="D-impex"></a>
       </div>
       <ul>
-        <li><a href="videonadzor.html">Video surveillance</a></li>
-        <li><a href="alarmi.html">Alarm system</a></li>
-        <li><a href="motornekapije.html">Electric gate</a></li>
-        <li><a href="interfoni.html">Intercom</a></li>
-        <li><a href="kontrolapristupa.html">Access control</a></li>
-        <li><a href="bazeni.html">Swimming pool</a></li>
-        <li><a href="kontakti.html">Contact us</a></li>
+        <li><a href="videonadzor.html">Видеонаблюдение</a></li>
+        <li><a href="alarmi.html">Системы сигнализации</a></li>
+        <li><a href="motornekapije.html">Электрические ворота</a></li>
+        <li><a href="interfoni.html">Внутренняя связь</a></li>
+        <li><a href="kontrolapristupa.html">Контроль доступа</a></li>
+        <li><a href="bazeni.html">Установка бассейна</a></li>
+        <li><a href="kontakti.html">Связаться с нами</a></li>
       </ul>
       <div class="logo_div">
-        <a href="https://prodaja.d-impex.co.rs/" class="btn main_button">Online shop</a>
-        <select name="language" id="language" onchange="changeLanguage()">
-          <option value="RS"> 🇷🇸 </option>
-          <option value="EN" selected> 🇬🇧 </option>
-          <option value="RU"> 🇷🇺 </option>
-        </select>
+        <a href="https://prodaja.d-impex.co.rs/" class="btn main_button">Интернет магазин</a>
+        <label for="language-select">
+          <select aria-label="Выберите язык" name="language-select" id="language-select" class="language-select"
+            onchange="changeLanguage()">
+            <option value="RS"> 🇷🇸 </option>
+            <option value="EN"> 🇬🇧 </option>
+            <option value="RU" selected> 🇷🇺 </option>
+          </select>
+        </label>
       </div>
     </nav>
 
@@ -72,21 +75,23 @@
           </div>
         </div>
         <ul class="menu hide">
-          <div>
-            <select name="language" id="language" onchange="changeLanguage()">
+          <li>
+            <label for="language-select-mobile"></label>
+            <select aria-label="Выберите язык" name="language-select-mobile" id="language-select-mobile"
+              class="language-select" onchange="changeLanguageMobile()">
               <option value="RS"> 🇷🇸 </option>
-              <option value="EN" selected> 🇬🇧 </option>
-              <option value="RU"> 🇷🇺 </option>
+              <option value="EN"> 🇬🇧 </option>
+              <option value="RU" selected> 🇷🇺 </option>
             </select>
-          </div>
-          <li class="menu-item"><a href="videonadzor.html">Video surveillance</a></li>
-          <li class="menu-item"><a href="alarmi.html">Alarm system</a></li>
-          <li class="menu-item"><a href="motornekapije.html">Electric gate</a></li>
-          <li class="menu-item"><a href="interfoni.html">Intercom</a></li>
-          <li class="menu-item"><a href="kontrolapristupa.html">Access control system</a></li>
-          <li class="menu-item"><a href="bazeni.html">Swimming pool installation</a></li>
-          <li class="menu-item"><a href="kontakti.html">Contact us</a></li>
-          <li class="menu-item"><a href="https://prodaja.d-impex.co.rs/">Online shop</a></li>
+          </li>
+          <li class="menu-item"><a href="videonadzor.html">Видеонаблюдение</a></li>
+          <li class="menu-item"><a href="alarmi.html">Системы сигнализации</a></li>
+          <li class="menu-item"><a href="motornekapije.html">Электрические ворота</a></li>
+          <li class="menu-item"><a href="interfoni.html">Внутренняя связь</a></li>
+          <li class="menu-item"><a href="kontrolapristupa.html">Контроль доступа</a></li>
+          <li class="menu-item"><a href="bazeni.html">Установка бассейна</a></li>
+          <li class="menu-item"><a href="kontakti.html">Связаться с нами</a></li>
+          <li class="menu-item"><a href="https://prodaja.d-impex.co.rs/">Интернет магазин</a></li>
         </ul>
       </div>
     </nav>
@@ -96,25 +101,25 @@
     <section id="hero" class="hero-access-control">
       <div class="hero_product">
         <div>
-          <h1>Access Control and Employee Working Time Systems</h1>
+          <h1>Системы контроля доступа и рабочего времени сотрудников</h1>
           <ul class="checkbox_list">
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.webp" alt="Profesionalna ugradnja" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="feature 1" />
               </div>
-              <p>Professional installation</p>
+              <p>Профессиональная установка</p>
             </li>
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.webp" alt="30 years of experience" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="feature 2" />
               </div>
-              <p>30 years of experience</p>
+              <p>30 лет опыта в отрасли</p>
             </li>
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.webp" alt="We provide services throughout Serbia" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="feature 3" />
               </div>
-              <p>We provide services throughout Serbia</p>
+              <p>Мы предоставляем услуги по всей Сербии</p>
             </li>
           </ul>
         </div>
@@ -125,31 +130,38 @@
     </section>
     <section id="call-to-action">
       <div>
+        <p>Узнать больше</p>
         <div class="push-up">
-          <a class="main-call-to-action" href="https://prodaja.d-impex.co.rs/product-category/kontrola-pristupa/">Online
-            shop</a>
-          <a class="secundary-call-to-action" href="kontakti.html">Contact us</a>
+          <a class="main-call-to-action" href="https://prodaja.d-impex.co.rs/product-category/kontrola-pristupa/">В сети
+            магазин</a>
+          <a class="secundary-call-to-action" href="kontakti.html">Связаться с нами</a>
         </div>
       </div>
     </section>
     <section class="product_info">
       <div class="product_info_container" id="category-info-1">
-        <h2>Installation of the access control system</h2>
+        <h2>Системы контроля доступа Сербия</h2>
         <p>
-          Utilize Access Control Systems for Effective Surveillance and Physical Protection. These systems ensure
-          authorized access, entry, and passage within designated areas, enhancing security. Employ Working Time Control
-          Systems to accurately record employee, vehicle, and visitor movement across zones, facilities, and individual
-          rooms
+          Используйте системы контроля доступа для эффективного наблюдения и физической защиты. Эти системы обеспечивают
+          санкционированный доступ, вход и проход в пределах обозначенных зон, что повышает безопасность. Используйте
+          контроль рабочего времени
+          Системы для точной регистрации перемещения сотрудников, транспортных средств и посетителей по зонам, объектам
+          и отдельным лицам.
+          номера
         </p>
         <p>
-          Our Timekeeping and Access Control Systems: Perfect Solutions for Small to Medium-Sized Enterprises. Choose
-          from streamlined single-terminal options or expand with virtually limitless terminals accessible online, from
-          anywhere. Our systems guarantee dependable, enduring performance, effortless setup, and activation. Each
-          system includes the 'Working Time' program, enabling seamless and swift employee work time management
+          Наши системы хронометража и контроля доступа: идеальные решения для малых и средних предприятий. Выбирать
+          от оптимизированных вариантов с одним терминалом или расшириться за счет практически неограниченного
+          количества терминалов, доступных в Интернете, от
+          в любом месте. Наши системы гарантируют надежную, устойчивую работу, простую настройку и активацию. Каждый
+          Система включает в себя программу «Рабочее время», позволяющую легко и быстро управлять рабочим временем
+          сотрудников.
         </p>
         <p>
-          Authentication Methods: Explore Three Key Factors. Begin with password or PIN input, advance to biometric
-          scans (handprints, fingerprints, eye pupils, facial recognition), and embrace RFID card or key access
+          Методы аутентификации: изучите три ключевых фактора. Начните с ввода пароля или PIN-кода, перейдите к
+          биометрическим
+          сканирование (отпечатки ладоней, отпечатки пальцев, зрачки глаз, распознавание лиц) и доступ к RFID-карте или
+          ключу
         </p>
 
         <div class="product_info_cards">
@@ -159,13 +171,13 @@
                 <img src="KontrolaPristupa/evidencija-radnog-vremena.jpg"
                   alt="Recording of working hours of employees" />
               </div>
-              <p>Recording of working hours of employees</p>
+              <p>Учет рабочего времени сотрудников</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
                 <img src="KontrolaPristupa/dimpex.png" alt="Vehicle entry control systems" />
               </div>
-              <p>Vehicle entry control</p>
+              <p>Контроль въезда транспортных средств</p>
             </div>
           </div>
           <div id="col2" class="product_info_col">
@@ -173,13 +185,13 @@
               <div class="icon_container type_vector">
                 <img src="KontrolaPristupa/passcode.png" alt="Access control Novi Sad" />
               </div>
-              <p>PIN code</p>
+              <p>Пин-код</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
                 <img src="KontrolaPristupa/kontorola-pristupa-sifrom.jpg" alt="Password access example" />
               </div>
-              <p>Password access</p>
+              <p>Доступ по паролю</p>
             </div>
           </div>
           <div id="col3" class="product_info_col">
@@ -187,13 +199,13 @@
               <div class="icon_container">
                 <img src="KontrolaPristupa/brava-na-otisak-prsta.jpg" alt="Fingerprint access serbia" />
               </div>
-              <p>Fingerprint access</p>
+              <p>Доступ по отпечатку пальца</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
                 <img src="KontrolaPristupa/kontrola-pristupa-rfid-kartice.jpg" alt="Card access" />
               </div>
-              <p>Card access</p>
+              <p>Доступ к карте</p>
             </div>
           </div>
         </div>
@@ -204,17 +216,17 @@
   <footer>
     <div id="footer-grid">
       <div class="footer-box contact-informations">
-        <h3>Contact</h3>
+        <h3>Контакт</h3>
 
         <ul>
           <li>
-            Address:
+            Адрес:
             <a target="_blank"
               href="https://www.google.com/maps/place/d-impex+d.o.o./@45.258716,19.830887,15z/data=!4m5!3m4!1s0x0:0x2630d9cd1fc07c53!8m2!3d45.258716!4d19.830887">Branimira
               Ćosića 44 - 21000 Novi Sad</a>
           </li>
           <li>
-            Phones: <a href="tel:021 66-15-799">021 66-15-799</a>
+            Телефоны: <a href="tel:021 66-15-799">021 66-15-799</a>
             <br>
             <a href="tel:060 60-70-689">060 60-70-689</a>
             <br>
@@ -228,7 +240,7 @@
             eFakture: <a href="mailto:dimpexdoo@sbb.rs">dimpexdoo@sbb.rs</a>
           </li>
           <li>
-            Shop requests: <a href="mailto:prodajadimpex@sbb.rs">prodajadimpex@sbb.rs</a>
+            Магазин запросы: <a href="mailto:prodajadimpex@sbb.rs">prodajadimpex@sbb.rs</a>
           </li>
           <li>
             PIB: <span>100465833</span>
@@ -237,58 +249,58 @@
       </div>
 
       <div class="footer-box working-hours tablet-extra">
-        <h3>We are available by phone:</h3>
+        <h3>Мы доступны по телефону:</h3>
 
         <ul>
-          <li>On weekdays from 7:30 a.m. to 3:30 p.m</li>
-          <li>Saturdays from 8:30 a.m. to 12:00 p.m</li>
+          <li>В рабочие дни с 7:30 до 15:30</li>
+          <li>Суббота с 8:30 до 12:00</li>
           <li>
-            Write email to us on Sundays
-            <a href="mailto:office@d-impex.co.rs">here</a>
+            Пишите нам по воскресеньям здесь
+            <a href="mailto:office@d-impex.co.rs">office@d-impex.co.rs</a>
           </li>
         </ul>
       </div>
 
       <div class="footer-box documents">
-        <h3>Documents</h3>
+        <h3>Документы</h3>
 
         <ul>
           <li>
-            <a target="_blank" href="Dokumenta/EVIDENCIJA.pdf" download>Data for records</a>
+            <a target="_blank" href="Dokumenta/EVIDENCIJA.pdf" download>Данные для записей</a>
           </li>
           <li>
-            <a target="_blank" href="Dokumenta/PDV_PIB.pdf" download>Confirmation of completed registration</a>
+            <a target="_blank" href="Dokumenta/PDV_PIB.pdf" download>Подтверждение завершенной регистрации</a>
           </li>
           <li>
-            <a target="_blank" href="Dokumenta/APR.pdf" download>Certificate of registration of the business entity</a>
+            <a target="_blank" href="Dokumenta/APR.pdf" download>Свидетельство о регистрации юридического лица</a>
           </li>
           <li>
-            <a target="_blank" href="Dokumenta/opsti_garantni_uslovi.pdf">General warranty conditions</a>
+            <a target="_blank" href="Dokumenta/opsti_garantni_uslovi.pdf">Общие условия гарантии</a>
           </li>
           <li>
-            <a href="https://blog.d-impex.co.rs/">Blog</a>
+            <a href="https://blog.d-impex.co.rs/">Блог</a>
           </li>
         </ul>
       </div>
 
       <div class="footer-box social-media">
-        <h3>Social</h3>
+        <h3>Социальные медиа</h3>
 
         <ul>
           <li>
-            <div><img src="img/youtube.webp" alt="YouTube|D-impex" /></div>
+            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" /></div>
             <a target="_blank" href="https://www.youtube.com/@dejanpocek358">dejanpocek</a>
           </li>
           <li>
-            <div><img src="img/instagram.webp" alt="Instagram|D-impex" /></div>
+            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" /></div>
             <a target="_blank" href="https://www.instagram.com/d_impex/">d_impex</a>
           </li>
           <li>
-            <div><img src="img/facebook.webp" alt="Facebook|D-impex" /></div>
+            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" /></div>
             <a target="_blank" href="https://www.facebook.com/dimpexdoo/">dimpexdoo</a>
           </li>
           <li>
-            <div><img src="img/twitter.webp" alt="Twitter|D-impex" /></div>
+            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" /></div>
             <a target="_blank" href="https://twitter.com/Dimpex_">Dimpex_</a>
           </li>
         </ul>

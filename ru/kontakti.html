@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 
@@ -15,17 +15,17 @@
 
     <meta charset="utf-8">
     <meta name="description"
-        content="D-impex Contact us if you need Security systems, Intercoms, Video surveillance, Alarms, Motor gates, Swimming pool installation in Serbia, Novi Sad Serbia">
+        content="D-impex Свяжитесь с нами, если вам нужны Системы безопасности, Домофоны, Видеонаблюдение, Сигнализация, Автоматические ворота, Установка бассейнов в Сербии">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="geo.region" content="RS">
-    <meta property="og:title" content="D-impex | Contact us">
+    <meta property="og:title" content="D-impex | Связаться с нами">
     <meta property="og:type" content="website">
     <meta property="og:description"
-        content="D-impex Contact us if you need Security systems, Intercoms, Video surveillance, Alarms, Motor gates, Swimming pool installation in Serbia, Novi Sad Serbia">
+        content="D-impex Свяжитесь с нами, если вам нужны Системы безопасности, Домофоны, Видеонаблюдение, Сигнализация, Автоматические ворота, Установка бассейнов в Сербии">
     <meta property="og:site_name" content="D-impex">
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>D-impex | Contact us</title>
+    <title>D-impex | Связаться с нами</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,24 +38,27 @@
     <header>
         <nav id="nav-desktop">
             <div class="logo_div">
-                <a href="index.html"><img width="142.5" height="27.75" src="img/d-impex.webp" alt="D-impex"></a>
+                <a href="index.html"><img width="128.25" height="24.975" src="img/d-impex.webp" alt="D-impex"></a>
             </div>
             <ul>
-                <li><a href="videonadzor.html">Video surveillance</a></li>
-                <li><a href="alarmi.html">Alarm system</a></li>
-                <li><a href="motornekapije.html">Electric gate</a></li>
-                <li><a href="interfoni.html">Intercom</a></li>
-                <li><a href="kontrolapristupa.html">Access control</a></li>
-                <li><a href="bazeni.html">Swimming pool</a></li>
-                <li><a href="kontakti.html">Contact us</a></li>
+                <li><a href="videonadzor.html">Видеонаблюдение</a></li>
+                <li><a href="alarmi.html">Системы сигнализации</a></li>
+                <li><a href="motornekapije.html">Электрические ворота</a></li>
+                <li><a href="interfoni.html">Внутренняя связь</a></li>
+                <li><a href="kontrolapristupa.html">Контроль доступа</a></li>
+                <li><a href="bazeni.html">Установка бассейна</a></li>
+                <li><a href="kontakti.html">Связаться с нами</a></li>
             </ul>
             <div class="logo_div">
-                <a href="https://prodaja.d-impex.co.rs/" class="btn main_button">Online shop</a>
-                <select name="language" id="language" onchange="changeLanguage()">
-                    <option value="RS"> 🇷🇸 </option>
-                    <option value="EN" selected> 🇬🇧 </option>
-                    <option value="RU"> 🇷🇺 </option>
-                </select>
+                <a href="https://prodaja.d-impex.co.rs/" class="btn main_button">Интернет магазин</a>
+                <label for="language-select">
+                    <select aria-label="Выберите язык" name="language-select" id="language-select"
+                        class="language-select" onchange="changeLanguage()">
+                        <option value="RS"> 🇷🇸 </option>
+                        <option value="EN"> 🇬🇧 </option>
+                        <option value="RU" selected> 🇷🇺 </option>
+                    </select>
+                </label>
             </div>
         </nav>
 
@@ -73,21 +76,23 @@
                     </div>
                 </div>
                 <ul class="menu hide">
-                    <div>
-                        <select name="language" id="language" onchange="changeLanguage()">
+                    <li>
+                        <label for="language-select-mobile"></label>
+                        <select aria-label="Выберите язык" name="language-select-mobile" id="language-select-mobile"
+                            class="language-select" onchange="changeLanguageMobile()">
                             <option value="RS"> 🇷🇸 </option>
-                            <option value="EN" selected> 🇬🇧 </option>
-                            <option value="RU"> 🇷🇺 </option>
+                            <option value="EN"> 🇬🇧 </option>
+                            <option value="RU" selected> 🇷🇺 </option>
                         </select>
-                    </div>
-                    <li class="menu-item"><a href="videonadzor.html">Video surveillance</a></li>
-                    <li class="menu-item"><a href="alarmi.html">Alarm system</a></li>
-                    <li class="menu-item"><a href="motornekapije.html">Electric gate</a></li>
-                    <li class="menu-item"><a href="interfoni.html">Intercom</a></li>
-                    <li class="menu-item"><a href="kontrolapristupa.html">Access control system</a></li>
-                    <li class="menu-item"><a href="bazeni.html">Swimming pool installation</a></li>
-                    <li class="menu-item"><a href="kontakti.html">Contact us</a></li>
-                    <li class="menu-item"><a href="https://prodaja.d-impex.co.rs/">Online shop</a></li>
+                    </li>
+                    <li class="menu-item"><a href="videonadzor.html">Видеонаблюдение</a></li>
+                    <li class="menu-item"><a href="alarmi.html">Системы сигнализации</a></li>
+                    <li class="menu-item"><a href="motornekapije.html">Электрические ворота</a></li>
+                    <li class="menu-item"><a href="interfoni.html">Внутренняя связь</a></li>
+                    <li class="menu-item"><a href="kontrolapristupa.html">Контроль доступа</a></li>
+                    <li class="menu-item"><a href="bazeni.html">Установка бассейна</a></li>
+                    <li class="menu-item"><a href="kontakti.html">Связаться с нами</a></li>
+                    <li class="menu-item"><a href="https://prodaja.d-impex.co.rs/">Интернет магазин</a></li>
                 </ul>
             </div>
         </nav>
@@ -97,24 +102,26 @@
 
         <section role="banner" id="contact-info">
 
-            <h1>Contact details</h1>
+            <h1>Контактная информация</h1>
+            <h2 class="htop">d-impex d.o.o. информация</h2>
 
             <div class="contact-details">
 
-                <p>Address: <a target="_blank"
+                <p>Адрес: <a target="_blank"
                         href="https://www.google.com/maps/place/d-impex+d.o.o./@45.258716,19.830887,15z/data=!4m5!3m4!1s0x0:0x2630d9cd1fc07c53!8m2!3d45.258716!4d19.830887">Branimira
                         Ćosića 44 • 21000 Novi Sad</a></p>
                 <hr>
-                <p>Phone: <a href="tel:021 66-15-799">021 66-15-799</a> • <a href="tel:+38160 60-70-689">+38160
+                <p>Телефон: <a href="tel:021 66-15-799">021 66-15-799</a> • <a href="tel:+38160 60-70-689">+38160
                         60-70-689</a> • <a href="tel:+38160 60-70-680">+38160 60-70-680</a></p>
                 <hr>
                 <p>E-mail: <a href="mailto:office@d-impex.co.rs">office@d-impex.co.rs</a></p>
                 <hr>
                 <p>eFakture: <a href="mailto:dimpexdoo@sbb.rs">dimpexdoo@sbb.rs</a></p>
                 <hr>
-                <p>PIB: <a>100465833</a></p>
+                <p>PIB: 100465833</p>
                 <hr>
-                <p>E-mail for shop requests: <a href="mailto:prodajadimpex@sbb.rs">prodajadimpex@sbb.rs</a></p>
+                <p>Электронная почта для запросов в магазин: <a
+                        href="mailto:prodajadimpex@sbb.rs">prodajadimpex@sbb.rs</a></p>
 
             </div>
 
@@ -125,17 +132,17 @@
     <footer>
         <div id="footer-grid">
             <div class="footer-box contact-informations">
-                <h3>Contact</h3>
+                <h3>Контакт</h3>
 
                 <ul>
                     <li>
-                        Address:
+                        Адрес:
                         <a target="_blank"
                             href="https://www.google.com/maps/place/d-impex+d.o.o./@45.258716,19.830887,15z/data=!4m5!3m4!1s0x0:0x2630d9cd1fc07c53!8m2!3d45.258716!4d19.830887">Branimira
                             Ćosića 44 - 21000 Novi Sad</a>
                     </li>
                     <li>
-                        Phones: <a href="tel:021 66-15-799">021 66-15-799</a>
+                        Телефоны: <a href="tel:021 66-15-799">021 66-15-799</a>
                         <br>
                         <a href="tel:060 60-70-689">060 60-70-689</a>
                         <br>
@@ -149,7 +156,7 @@
                         eFakture: <a href="mailto:dimpexdoo@sbb.rs">dimpexdoo@sbb.rs</a>
                     </li>
                     <li>
-                        Shop requests: <a href="mailto:prodajadimpex@sbb.rs">prodajadimpex@sbb.rs</a>
+                        Магазин запросы: <a href="mailto:prodajadimpex@sbb.rs">prodajadimpex@sbb.rs</a>
                     </li>
                     <li>
                         PIB: <span>100465833</span>
@@ -158,44 +165,44 @@
             </div>
 
             <div class="footer-box working-hours tablet-extra">
-                <h3>We are available by phone:</h3>
+                <h3>Мы доступны по телефону:</h3>
 
                 <ul>
-                    <li>On weekdays from 7:30 a.m. to 3:30 p.m</li>
-                    <li>Saturdays from 8:30 a.m. to 12:00 p.m</li>
+                    <li>В рабочие дни с 7:30 до 15:30</li>
+                    <li>Суббота с 8:30 до 12:00</li>
                     <li>
-                        Write email to us on Sundays
-                        <a href="mailto:office@d-impex.co.rs">here</a>
+                        Пишите нам по воскресеньям здесь
+                        <a href="mailto:office@d-impex.co.rs">office@d-impex.co.rs</a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer-box documents">
-                <h3>Documents</h3>
+                <h3>Документы</h3>
 
                 <ul>
                     <li>
-                        <a target="_blank" href="Dokumenta/EVIDENCIJA.pdf" download>Data for records</a>
+                        <a target="_blank" href="Dokumenta/EVIDENCIJA.pdf" download>Данные для записей</a>
                     </li>
                     <li>
-                        <a target="_blank" href="Dokumenta/PDV_PIB.pdf" download>Confirmation of completed
-                            registration</a>
+                        <a target="_blank" href="Dokumenta/PDV_PIB.pdf" download>Подтверждение завершенной
+                            регистрации</a>
                     </li>
                     <li>
-                        <a target="_blank" href="Dokumenta/APR.pdf" download>Certificate of registration of the business
-                            entity</a>
+                        <a target="_blank" href="Dokumenta/APR.pdf" download>Свидетельство о регистрации юридического
+                            лица</a>
                     </li>
                     <li>
-                        <a target="_blank" href="Dokumenta/opsti_garantni_uslovi.pdf">General warranty conditions</a>
+                        <a target="_blank" href="Dokumenta/opsti_garantni_uslovi.pdf">Общие условия гарантии</a>
                     </li>
                     <li>
-                        <a href="https://blog.d-impex.co.rs/">Blog</a>
+                        <a href="https://blog.d-impex.co.rs/">Блог</a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer-box social-media">
-                <h3>Social</h3>
+                <h3>Социальные медиа</h3>
 
                 <ul>
                     <li>

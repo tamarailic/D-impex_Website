@@ -34,7 +34,7 @@ body {
 nav {
   background-color: var(--DarkGray);
   grid-template-columns: 1fr 8fr 1fr;
-  padding: 10px 10%;
+  padding: 10px 4%;
   filter: var(--ShadowLight);
   z-index: 9;
 }
@@ -50,7 +50,7 @@ nav>ul>li>a {
   color: var(--AlmostWhite);
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  font-size: 1rem;
+  font-size: .8rem;
   text-decoration: none;
 }
 
@@ -366,7 +366,7 @@ h3 {
 .main_button {
   background-color: var(--DarkerBlue);
   color: var(--AlmostWhite);
-  font-size: 1.1rem;
+  font-size: .9rem;
   font-weight: normal;
   filter: var(--ShadowLight);
 }
