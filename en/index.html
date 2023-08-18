@@ -91,7 +91,7 @@
   <header>
     <nav id="nav-desktop">
       <div class="logo_div">
-        <a href="index.html"><img src="img/d-impex.png" alt="D-impex" /></a>
+        <a href="index.html"><img width="142.5" height="27.75" src="img/d-impex.webp" alt="D-impex"></a>
       </div>
       <ul>
         <li><a href="videonadzor.html">Video surveillance</a></li>
@@ -104,11 +104,14 @@
       </ul>
       <div class="logo_div">
         <a href="https://prodaja.d-impex.co.rs/" class="btn main_button">Online shop</a>
-        <select name="language" id="language" onchange="changeLanguage()">
-          <option value="RS"> 🇷🇸 </option>
-          <option value="EN" selected> 🇬🇧 </option>
-          <option value="RU"> 🇷🇺 </option>
-        </select>
+        <label for="language-select">
+          <select aria-label="Choose language" name="language-select" id="language-select" class="language-select"
+            onchange="changeLanguage()">
+            <option value="RS"> 🇷🇸 </option>
+            <option value="EN" selected> 🇬🇧 </option>
+            <option value="RU"> 🇷🇺 </option>
+          </select>
+        </label>
       </div>
     </nav>
 
@@ -116,7 +119,7 @@
       <div class="header">
         <div class="menu-top">
           <div class="icon icon-apple">
-            <a href="index.html"><img src="img/d-impex.png" alt="D-impex"></a>
+            <a href="index.html"><img width="142.5" height="27.75" src="img/d-impex.webp" alt="D-impex"></a>
           </div>
           <div class="burger-container">
             <div id="burger">
@@ -126,13 +129,15 @@
           </div>
         </div>
         <ul class="menu hide">
-          <div>
-            <select name="language" id="language" onchange="changeLanguage()">
-              <option value="RS"> 🇷🇸 </option>
-              <option value="EN" selected> 🇬🇧 </option>
+          <li>
+            <label for="language-select-mobile"></label>
+            <select aria-label="Choose language" name="language-select-mobile" id="language-select-mobile"
+              class="language-select" onchange="changeLanguageMobile()">
+              <option value="RS" selected> 🇷🇸 </option>
+              <option value="EN"> 🇬🇧 </option>
               <option value="RU"> 🇷🇺 </option>
             </select>
-          </div>
+          </li>
           <li class="menu-item"><a href="videonadzor.html">Video surveillance</a></li>
           <li class="menu-item"><a href="alarmi.html">Alarm system</a></li>
           <li class="menu-item"><a href="motornekapije.html">Electric gate</a></li>
@@ -154,8 +159,8 @@
             High quality security systems <u>installation</u> and <u>online shop</u>
           </h1>
           <h2 id="about_the_page">
-            You have a desire to protect your home or business premises, but you don't know
-            where do you start? You have come to the right place.
+            You have a desire to protect your home or business premises, but don't know
+            where to start? You have come to the right place.
           </h2>
           <div class="links link-effect-14">
             <a href="kontakti.html"> <span>Call us</span></a>
@@ -303,7 +308,7 @@
 
     <section id="call-to-action" class="offset-on-overlap">
       <div>
-        <h3 id="contact_us">Call us, we are here to answer all your questions</h3>
+        <h3 id="contact_us">Call us, we are here to assist you</h3>
         <a class="extra-space btn white_button" href="tel:021 66-15-799">021 66-15-799</a>
       </div>
     </section>
@@ -386,19 +391,19 @@
 
         <ul>
           <li>
-            <div><img src="img/youtube.webp" alt="YouTube|D-impex" /></div>
+            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" /></div>
             <a target="_blank" href="https://www.youtube.com/@dejanpocek358">dejanpocek</a>
           </li>
           <li>
-            <div><img src="img/instagram.webp" alt="Instagram|D-impex" /></div>
+            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" /></div>
             <a target="_blank" href="https://www.instagram.com/d_impex/">d_impex</a>
           </li>
           <li>
-            <div><img src="img/facebook.webp" alt="Facebook|D-impex" /></div>
+            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" /></div>
             <a target="_blank" href="https://www.facebook.com/dimpexdoo/">dimpexdoo</a>
           </li>
           <li>
-            <div><img src="img/twitter.webp" alt="Twitter|D-impex" /></div>
+            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" /></div>
             <a target="_blank" href="https://twitter.com/Dimpex_">Dimpex_</a>
           </li>
         </ul>

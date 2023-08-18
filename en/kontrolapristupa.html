@@ -37,7 +37,7 @@
   <header>
     <nav id="nav-desktop">
       <div class="logo_div">
-        <a href="index.html"><img src="img/d-impex.png" alt="D-impex" /></a>
+        <a href="index.html"><img width="142.5" height="27.75" src="img/d-impex.webp" alt="D-impex"></a>
       </div>
       <ul>
         <li><a href="videonadzor.html">Video surveillance</a></li>
@@ -50,11 +50,14 @@
       </ul>
       <div class="logo_div">
         <a href="https://prodaja.d-impex.co.rs/" class="btn main_button">Online shop</a>
-        <select name="language" id="language" onchange="changeLanguage()">
-          <option value="RS"> 🇷🇸 </option>
-          <option value="EN" selected> 🇬🇧 </option>
-          <option value="RU"> 🇷🇺 </option>
-        </select>
+        <label for="language-select">
+          <select aria-label="Choose language" name="language-select" id="language-select" class="language-select"
+            onchange="changeLanguage()">
+            <option value="RS"> 🇷🇸 </option>
+            <option value="EN" selected> 🇬🇧 </option>
+            <option value="RU"> 🇷🇺 </option>
+          </select>
+        </label>
       </div>
     </nav>
 
@@ -62,7 +65,7 @@
       <div class="header">
         <div class="menu-top">
           <div class="icon icon-apple">
-            <a href="index.html"><img src="img/d-impex.png" alt="D-impex"></a>
+            <a href="index.html"><img width="142.5" height="27.75" src="img/d-impex.webp" alt="D-impex"></a>
           </div>
           <div class="burger-container">
             <div id="burger">
@@ -72,13 +75,15 @@
           </div>
         </div>
         <ul class="menu hide">
-          <div>
-            <select name="language" id="language" onchange="changeLanguage()">
-              <option value="RS"> 🇷🇸 </option>
-              <option value="EN" selected> 🇬🇧 </option>
+          <li>
+            <label for="language-select-mobile"></label>
+            <select aria-label="Choose language" name="language-select-mobile" id="language-select-mobile"
+              class="language-select" onchange="changeLanguageMobile()">
+              <option value="RS" selected> 🇷🇸 </option>
+              <option value="EN"> 🇬🇧 </option>
               <option value="RU"> 🇷🇺 </option>
             </select>
-          </div>
+          </li>
           <li class="menu-item"><a href="videonadzor.html">Video surveillance</a></li>
           <li class="menu-item"><a href="alarmi.html">Alarm system</a></li>
           <li class="menu-item"><a href="motornekapije.html">Electric gate</a></li>
@@ -100,19 +105,19 @@
           <ul class="checkbox_list">
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.webp" alt="Profesionalna ugradnja" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="feature 1" />
               </div>
               <p>Professional installation</p>
             </li>
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.webp" alt="30 years of experience" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="feature 2" />
               </div>
               <p>30 years of experience</p>
             </li>
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.webp" alt="We provide services throughout Serbia" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="feature 3" />
               </div>
               <p>We provide services throughout Serbia</p>
             </li>
@@ -125,6 +130,7 @@
     </section>
     <section id="call-to-action">
       <div>
+        <p>Learn more</p>
         <div class="push-up">
           <a class="main-call-to-action" href="https://prodaja.d-impex.co.rs/product-category/kontrola-pristupa/">Online
             shop</a>
@@ -134,7 +140,7 @@
     </section>
     <section class="product_info">
       <div class="product_info_container" id="category-info-1">
-        <h2>Installation of the access control system</h2>
+        <h2>Access control systems Serbia</h2>
         <p>
           Utilize Access Control Systems for Effective Surveillance and Physical Protection. These systems ensure
           authorized access, entry, and passage within designated areas, enhancing security. Employ Working Time Control
@@ -276,19 +282,19 @@
 
         <ul>
           <li>
-            <div><img src="img/youtube.webp" alt="YouTube|D-impex" /></div>
+            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" /></div>
             <a target="_blank" href="https://www.youtube.com/@dejanpocek358">dejanpocek</a>
           </li>
           <li>
-            <div><img src="img/instagram.webp" alt="Instagram|D-impex" /></div>
+            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" /></div>
             <a target="_blank" href="https://www.instagram.com/d_impex/">d_impex</a>
           </li>
           <li>
-            <div><img src="img/facebook.webp" alt="Facebook|D-impex" /></div>
+            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" /></div>
             <a target="_blank" href="https://www.facebook.com/dimpexdoo/">dimpexdoo</a>
           </li>
           <li>
-            <div><img src="img/twitter.webp" alt="Twitter|D-impex" /></div>
+            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" /></div>
             <a target="_blank" href="https://twitter.com/Dimpex_">Dimpex_</a>
           </li>
         </ul>

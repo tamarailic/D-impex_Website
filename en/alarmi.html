@@ -15,13 +15,13 @@
 
   <meta charset="utf-8">
   <meta name="description"
-    content="Alarm systems for apartments and business premises at excellent prices in Novi Sad, Serbia | Professional installation and sale of alarms | D-impex Alarms">
+    content="Alarm systems for home apartments and business premises at excellent prices in Novi Sad, Serbia | Professional installation and sale of alarms | D-impex Alarms">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/icon.png">
   <meta property="og:title" content="Alarm systems installation and sale - Serbia">
   <meta property="og:type" content="website">
   <meta property="og:description"
-    content="Alarm systems for apartments and business premises at excellent prices in Novi Sad, Serbia | Professional installation and sale of alarms | D-impex Alarms">
+    content="Alarm systems for home apartments and business premises at excellent prices in Novi Sad, Serbia | Professional installation and sale of alarms | D-impex Alarms">
   <meta property="og:site_name" content="D-impex">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Alarm systems installation and sale - Serbia</title>
@@ -37,7 +37,7 @@
   <header>
     <nav id="nav-desktop">
       <div class="logo_div">
-        <a href="index.html"><img src="img/d-impex.png" alt="D-impex" /></a>
+        <a href="index.html"><img width="142.5" height="27.75" src="img/d-impex.webp" alt="D-impex"></a>
       </div>
       <ul>
         <li><a href="videonadzor.html">Video surveillance</a></li>
@@ -49,12 +49,15 @@
         <li><a href="kontakti.html">Contact us</a></li>
       </ul>
       <div class="logo_div">
-        <a href="https://prodaja.d-impex.co.rs/" class="btn main_button">Online shop</a>
-        <select name="language" id="language" onchange="changeLanguage()">
-          <option value="RS"> 🇷🇸 </option>
-          <option value="EN" selected> 🇬🇧 </option>
-          <option value="RU"> 🇷🇺 </option>
-        </select>
+        <a href="https://prodaja.d-impex.co.rs/" class="btn main_button">Naša ponuda</a>
+        <label for="language-select">
+          <select aria-label="Choose language" name="language-select" id="language-select" class="language-select"
+            onchange="changeLanguage()">
+            <option value="RS"> 🇷🇸 </option>
+            <option value="EN" selected> 🇬🇧 </option>
+            <option value="RU"> 🇷🇺 </option>
+          </select>
+        </label>
       </div>
     </nav>
 
@@ -62,7 +65,7 @@
       <div class="header">
         <div class="menu-top">
           <div class="icon icon-apple">
-            <a href="index.html"><img src="img/d-impex.png" alt="D-impex"></a>
+            <a href="index.html"><img width="142.5" height="27.75" src="img/d-impex.webp" alt="D-impex"></a>
           </div>
           <div class="burger-container">
             <div id="burger">
@@ -72,13 +75,15 @@
           </div>
         </div>
         <ul class="menu hide">
-          <div>
-            <select name="language" id="language" onchange="changeLanguage()">
-              <option value="RS"> 🇷🇸 </option>
-              <option value="EN" selected> 🇬🇧 </option>
+          <li>
+            <label for="language-select-mobile"></label>
+            <select aria-label="Choose language" name="language-select-mobile" id="language-select-mobile"
+              class="language-select" onchange="changeLanguageMobile()">
+              <option value="RS" selected> 🇷🇸 </option>
+              <option value="EN"> 🇬🇧 </option>
               <option value="RU"> 🇷🇺 </option>
             </select>
-          </div>
+          </li>
           <li class="menu-item"><a href="videonadzor.html">Video surveillance</a></li>
           <li class="menu-item"><a href="alarmi.html">Alarm system</a></li>
           <li class="menu-item"><a href="motornekapije.html">Electric gate</a></li>
@@ -100,19 +105,19 @@
           <ul class="checkbox_list">
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.webp" alt="Professional alarm system installation" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="feature 1" />
               </div>
               <p>Professional installation</p>
             </li>
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.webp" alt="30 years of experience in industry" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="feature 2" />
               </div>
               <p>30 years of experience in industry</p>
             </li>
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.webp" alt="We provide services throughout Serbia" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="feature 3" />
               </div>
               <p>We provide services throughout Serbia</p>
             </li>
@@ -125,7 +130,7 @@
     </section>
     <section id="call-to-action">
       <div>
-        <h3>Learn more</h3>
+        <p>Learn more</p>
         <div class="push-up">
           <a class="main-call-to-action" href="https://prodaja.d-impex.co.rs/product-category/alarm-sistemi/">Online
             shop</a>
@@ -135,24 +140,24 @@
     </section>
     <section class="product_info">
       <div class="product_info_container" id="category-info-1">
-        <h2>Your protection in an imperfect world</h2>
+        <h2>Alarm system installation</h2>
         <p>
           Alarm systems with a wide range of detectors provide security
           against burglary, fire, early notification in case of water spillage
-          or gas leaks. Alarms can be managed via IOS or Android
+          or gas leaks. Alarms for homes and alarm systems for companies can be managed via IOS or Android
           mobile phone applications. Alarms for the house and apartment make it possible
           to have high security in the building when the owners are not in the building,
           they also have an anti-burglary function during the tenant's stay
           on-premises. Our offer includes world leaders in the field
           of security systems Ajax alarm systems that you can learn more about
-          <a target="_blank" href="https://ajax.systems/">here</a>.
+          <a target="_blank" href="https://ajax.systems/">at ajax.systems</a>.
         </p>
 
         <div class="product_info_cards">
           <div id="col1" class="product_info_col">
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="AlarmniSistemi/ajax-alarmi-novi-sad.jpg" alt="Ajax alarms" />
+                <img src="AlarmniSistemi/ajax-alarmi-novi-sad.jpg" alt="Ajax alarms Serbia" />
               </div>
               <p>Ajax alarms</p>
             </div>
@@ -213,7 +218,7 @@
       </div>
 
       <div class="product_info_container" id="category-info-2">
-        <h2>We care about you</h2>
+        <h2>Alarm Systems for home and business </h2>
         <p>
           Alarm systems are designed to detect unauthorized intrusion
           residential, business, or any other protected area or facility.
@@ -374,19 +379,19 @@
 
         <ul>
           <li>
-            <div><img src="img/youtube.webp" alt="YouTube|D-impex" /></div>
+            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" /></div>
             <a target="_blank" href="https://www.youtube.com/@dejanpocek358">dejanpocek</a>
           </li>
           <li>
-            <div><img src="img/instagram.webp" alt="Instagram|D-impex" /></div>
+            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" /></div>
             <a target="_blank" href="https://www.instagram.com/d_impex/">d_impex</a>
           </li>
           <li>
-            <div><img src="img/facebook.webp" alt="Facebook|D-impex" /></div>
+            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" /></div>
             <a target="_blank" href="https://www.facebook.com/dimpexdoo/">dimpexdoo</a>
           </li>
           <li>
-            <div><img src="img/twitter.webp" alt="Twitter|D-impex" /></div>
+            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" /></div>
             <a target="_blank" href="https://twitter.com/Dimpex_">Dimpex_</a>
           </li>
         </ul>
