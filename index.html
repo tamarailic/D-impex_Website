@@ -112,6 +112,12 @@
       </ul>
       <div class="logo_div">
         <a href="https://prodaja.d-impex.co.rs/" class="btn main_button">Naša ponuda</a>
+        <label for="language-select"></label>
+        <select name="language-select" id="language-select" class="language-select" onchange="changeLanguage()">
+          <option value="RS" selected> 🇷🇸 </option>
+          <option value="EN"> 🇬🇧 </option>
+          <option value="RU"> 🇷🇺 </option>
+        </select>
       </div>
     </nav>
 
@@ -129,6 +135,15 @@
           </div>
         </div>
         <ul class="menu hide">
+          <li>
+            <label for="language-select-mobile"></label>
+            <select name="language-select-mobile" id="language-select-mobile" class="language-select"
+              onchange="changeLanguageMobile()">
+              <option value="RS" selected> 🇷🇸 </option>
+              <option value="EN"> 🇬🇧 </option>
+              <option value="RU"> 🇷🇺 </option>
+            </select>
+          </li>
           <li class="menu-item"><a href="videonadzor.html">Video nadzor</a></li>
           <li class="menu-item"><a href="alarmi.html">Alarmni sistemi</a></li>
           <li class="menu-item"><a href="motornekapije.html">Motori za kapije</a></li>
@@ -284,11 +299,11 @@
       <div id="bazeni" class="card">
         <div class="card_footer">
           <p class="card_intro">Pogledajte našu ponudu</p>
-          <h2 class="card_title">Bazeni</h2>
+          <h2 class="card_title">Izgradnja bazena</h2>
           <p class="card_description">Novi stepen uživanja u vašem domu.</p>
           <div class="card_buttons">
-            <a href="bazeni.html" class="installation_button btn">Ugradnja</a>
-            <a href="https://prodaja.d-impex.co.rs/product-category/bazeni/" class="sale_button btn">Prodaja</a>
+            <a href="bazeni.html" class="installation_button btn">Izgradnja</a>
+            <a href="kontakti.html" class="sale_button btn">Kontakt</a>
           </div>
         </div>
       </div>

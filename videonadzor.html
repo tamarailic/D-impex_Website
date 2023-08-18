@@ -54,6 +54,12 @@
       </ul>
       <div class="logo_div">
         <a href="https://prodaja.d-impex.co.rs/" class="btn main_button">Naša ponuda</a>
+        <label for="language-select"></label>
+        <select name="language-select" id="language-select" class="language-select" onchange="changeLanguage()">
+          <option value="RS" selected> 🇷🇸 </option>
+          <option value="EN"> 🇬🇧 </option>
+          <option value="RU"> 🇷🇺 </option>
+        </select>
       </div>
     </nav>
 
@@ -71,6 +77,15 @@
           </div>
         </div>
         <ul class="menu hide">
+          <li>
+            <label for="language-select-mobile"></label>
+            <select name="language-select-mobile" id="language-select-mobile" class="language-select"
+              onchange="changeLanguageMobile()">
+              <option value="RS" selected> 🇷🇸 </option>
+              <option value="EN"> 🇬🇧 </option>
+              <option value="RU"> 🇷🇺 </option>
+            </select>
+          </li>
           <li class="menu-item"><a href="videonadzor.html">Video nadzor</a></li>
           <li class="menu-item"><a href="alarmi.html">Alarmni sistemi</a></li>
           <li class="menu-item"><a href="motornekapije.html">Motori za kapije</a></li>
@@ -92,19 +107,19 @@
           <ul class="checkbox_list">
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.png" alt="Profesionalna ugradnja" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="odlika 1" />
               </div>
               <p>Profesionalna ugradnja</p>
             </li>
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.png" alt="30 Godina iskustva" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="odlika 2" />
               </div>
               <p>30 Godina iskustva</p>
             </li>
             <li class="checkbox-li">
               <div class="checkbox_container_wrap">
-                <img class="icon_container" src="img/checkbox-img.png" alt="Pruzamo usluge sirom Srbije" />
+                <img width="24" height="24" class="icon_container-small" src="img/checkbox-img.webp" alt="odlika 3" />
               </div>
               <p>Pružamo usluge širom Srbije</p>
             </li>

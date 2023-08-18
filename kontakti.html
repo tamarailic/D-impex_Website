@@ -54,6 +54,12 @@
             </ul>
             <div class="logo_div">
                 <a href="https://prodaja.d-impex.co.rs/" class="btn main_button">Naša ponuda</a>
+                <label for="language-select"></label>
+                <select name="language-select" id="language-select" class="language-select" onchange="changeLanguage()">
+                    <option value="RS" selected> 🇷🇸 </option>
+                    <option value="EN"> 🇬🇧 </option>
+                    <option value="RU"> 🇷🇺 </option>
+                </select>
             </div>
         </nav>
 
@@ -71,6 +77,15 @@
                     </div>
                 </div>
                 <ul class="menu hide">
+                    <li>
+                        <label for="language-select-mobile"></label>
+                        <select name="language-select-mobile" id="language-select-mobile" class="language-select"
+                            onchange="changeLanguageMobile()">
+                            <option value="RS" selected> 🇷🇸 </option>
+                            <option value="EN"> 🇬🇧 </option>
+                            <option value="RU"> 🇷🇺 </option>
+                        </select>
+                    </li>
                     <li class="menu-item"><a href="videonadzor.html">Video nadzor</a></li>
                     <li class="menu-item"><a href="alarmi.html">Alarmni sistemi</a></li>
                     <li class="menu-item"><a href="motornekapije.html">Motori za kapije</a></li>
@@ -89,6 +104,7 @@
         <section role="banner" id="contact-info">
 
             <h1>Kontakt</h1>
+            <h2 class="htop">d-impex d.o.o. podaci</h2>
 
             <div class="contact-details">
 
@@ -103,7 +119,7 @@
                 <hr>
                 <p>eFakture: <a href="mailto:dimpexdoo@sbb.rs">dimpexdoo@sbb.rs</a></p>
                 <hr>
-                <p>PIB: <a>100465833</a></p>
+                <p>PIB: 100465833</p>
                 <hr>
                 <p>E-mail za prodaju: <a href="mailto:prodajadimpex@sbb.rs">prodajadimpex@sbb.rs</a></p>
 
