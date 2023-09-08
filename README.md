@@ -14,9 +14,11 @@ Developing static website for local security system company from Novi Sad, Serbi
 
 ![Google Page Insights](https://github.com/UPocek/D-impexWebsite/blob/main/docs/Screenshot%202023-09-08%20at%2010.25.44%20PM.png)
 
-After developing this webiste next task infornt of us was hosting management. Buying domain, setting up hosting, creating business emails for company needs, managing subdomains and working with ftp to transfer files to server. We learned a lot by doing this project and we continu to improve it in the future
+After developing this webiste next task infornt of us was hosting management. Buying domain, setting up hosting, creating business emails for company needs, managing subdomains and working with ftp to transfer files to server. We learned a lot by doing this project and we continu to improve it in the future.
 
-<img src="https://github.com/UPocek/D-impexWebsite/blob/main/docs/Screenshot%202023-09-08%20at%205.57.58%20PM.png" width="48%">
-<img src="https://github.com/UPocek/D-impexWebsite/blob/main/docs/Screenshot%202023-09-08%20at%205.58.13%20PM.png" width="48%">
-<img src="https://github.com/UPocek/D-impexWebsite/blob/main/docs/Screenshot%202023-09-08%20at%205.58.25%20PM.png" width="48%">
-<img src="https://github.com/UPocek/D-impexWebsite/blob/main/docs/Screenshot%202023-09-08%20at%205.58.35%20PM.png" width="48%">
+![Image1](https://github.com/UPocek/D-impexWebsite/blob/main/docs/Screenshot%202023-09-08%20at%205.57.58%20PM.png)
+![Image2](https://github.com/UPocek/D-impexWebsite/blob/main/docs/Screenshot%202023-09-08%20at%205.58.13%20PM.png)
+![Image3](https://github.com/UPocek/D-impexWebsite/blob/main/docs/Screenshot%202023-09-08%20at%205.58.25%20PM.png)
+![Image4](https://github.com/UPocek/D-impexWebsite/blob/main/docs/Screenshot%202023-09-08%20at%205.58.35%20PM.png)
+![Image5](https://github.com/UPocek/D-impexWebsite/blob/main/docs/Screenshot%202023-09-08%20at%205.58.49%20PM.png)
+![Image6](https://github.com/UPocek/D-impexWebsite/blob/main/docs/Screenshot%202023-09-08%20at%205.59.07%20PM.png)
