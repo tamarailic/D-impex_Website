@@ -28,9 +28,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
+  <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+  </noscript>
 </head>
 
 <body>
@@ -193,25 +197,25 @@
           <div id="col1" class="product_info_col">
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Bazeni/lajnerski-bazeni-novi-sad.jpg" alt="Liner pools Serbia" />
+                <img src="Bazeni/lajnerski-bazeni-novi-sad.webp" alt="Liner pools Serbia" loading="lazy" />
               </div>
               <p>Liners</p>
             </div>
             <div class="product_info_card">
               <div class="icon_container type_vector">
-                <img src="Bazeni/plan.png" alt="pool planning serbia" />
+                <img src="Bazeni/plan.webp" alt="pool planning serbia" />
               </div>
               <p>Pool planning</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Bazeni/roboti-za-ciscenje-bazena.jpg" alt="pool cleaning robots serbia" />
+                <img src="Bazeni/roboti-za-ciscenje-bazena.webp" alt="pool cleaning robots serbia" loading="lazy" />
               </div>
               <p>Pool cleaning robots</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Bazeni/oprema-za-bazene.jpg" alt="pool equipment shop" />
+                <img src="Bazeni/oprema-za-bazene.webp" alt="pool equipment shop" loading="lazy" />
               </div>
               <p>Pool waterfall</p>
             </div>
@@ -219,25 +223,25 @@
           <div id="col2" class="product_info_col">
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Bazeni/bazeni-od-iso-bloka.jpg" alt="ISO block pools Serbia" />
+                <img src="Bazeni/bazeni-od-iso-bloka.webp" alt="ISO block pools Serbia" loading="lazy" />
               </div>
               <p>ISO block pools</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Bazeni/betonski-bazeni.jpg" alt="Concrete pools Serbia" />
+                <img src="Bazeni/betonski-bazeni.webp" alt="Concrete pools Serbia" loading="lazy" />
               </div>
               <p>Concrete pools</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Bazeni/kupole-za-bazene.jpg" alt="pool domes serbia" />
+                <img src="Bazeni/kupole-za-bazene.webp" alt="pool domes serbia" loading="lazy" />
               </div>
               <p>Pool domes</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Bazeni/prekrivaci-za-bazene.jpg" alt="pool covers" />
+                <img src="Bazeni/prekrivaci-za-bazene.webp" alt="pool covers" loading="lazy" />
               </div>
               <p>Pool covers</p>
             </div>
@@ -245,25 +249,26 @@
           <div id="col3" class="product_info_col">
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Bazeni/hidro-masazne-kade-novi-sad.jpg" alt="Hydromassage tubs installation" />
+                <img src="Bazeni/hidro-masazne-kade-novi-sad.webp" alt="Hydromassage tubs installation"
+                  loading="lazy" />
               </div>
               <p>Hydromassage tubs</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Bazeni/Dzet-pumpa-za-plivanje.jpg" alt="Hydromassage pumps for pools" />
+                <img src="Bazeni/Dzet-pumpa-za-plivanje.webp" alt="Hydromassage pumps for pools" loading="lazy" />
               </div>
               <p>Hydromassage pumps</p>
             </div>
             <div class="product_info_card">
               <div class="icon_container type_vector">
-                <img src="Bazeni/brand.png" alt="Swimming Pool Equipment" />
+                <img src="Bazeni/brand.webp" alt="Swimming Pool Equipment" loading="lazy" />
               </div>
               <p>Swimming Pool Equipment</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Bazeni/osvetljenje-bazena.jpg" alt="Pool lighting" />
+                <img src="Bazeni/osvetljenje-bazena.webp" alt="Pool lighting" loading="lazy" />
               </div>
               <p>Pool lighting</p>
             </div>
@@ -352,57 +357,509 @@
       </div>
     </section>
 
+    <section id="faq">
+      <div class="faq_container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How long does a pool
+                last?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Depending on the type of pool chosen, its lifespan can range from 10 to 20 years, and for well-made
+                concrete pools, this period can be even longer. Regular maintenance <a
+                  href="https://blog.d-impex.co.rs/odrzavanje-bazena.html">extends the life of pools</a>, and for
+                certain types, such as liner pools, the pool lining or liner can be replaced after a certain period,
+                significantly extending their period of use. Expect your pool to last longer if you do everything as
+                intended for the type of pool you choose from the start, without compromising on the quality of
+                materials and equipment. Like any other property, a pool needs regular maintenance, occasionally
+                repairing some worn-out segments or parts of equipment, which will also enable longer use.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What is a waterproof
+                surface?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>When a pool is made of concrete, waterproofing of the wall surface must be done by applying
+                waterproofing materials that ensure that water from the pool will not penetrate the walls and thereby
+                seep out, which can cause a range of problems with both pool equipment and construction. It is essential
+                to ensure that the pool basin does not leak in any way.</p>
+              <p>There are also special paints for painting pool walls that do not allow water to pass through and can
+                be used as a finishing material. It will occasionally be necessary to recoat the wall surface with these
+                waterproof coatings because these materials are also exposed to the influence of <a
+                  href="https://blog.d-impex.co.rs/hemija-za-bazen-i-nacin-njihove-upotrebe.html">chemicals used for
+                  pool maintenance</a>, temperature differences, wear and tear from users, and minor damage during
+                cleaning with mechanical means.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What types of pool
+                accessories exist?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Increasingly popular are <a
+                  href="https://blog.d-impex.co.rs/dodatna-oprema-i-vodene-atrakcije.html">accessories that you can use
+                  for the pool</a> to enhance the enjoyment it provides.</p>
+              <p>It is possible to add some accessories later, such as above-ground JET PUMP for swimming, HEAT PUMP for
+                heating pool water, THERMAL COVER to protect the pool from mechanical impurities.</p>
+              <p>For some accessories, it is necessary to anticipate their later addition during the construction of the
+                pool, such as HYDRO MASSAGE or WATERFALL. For these accessories, electrical and plumbing installation in
+                the pool is required.</p>
+              <p>If you have made a machinery room that allows for the addition of equipment, you can subsequently
+                install equipment for automatic measurement and dosing of chemicals in the water treatment process.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">I have a small yard, can
+                I still have a pool?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Pool dimensions can vary greatly, from very small to, of course, very large. If there is limited space
+                in your yard for a pool, it is not impossible to build one; it could be a smaller pool used more like a
+                hot tub, for water massage, but also for cooling off on hot summer days. Adding water heating enables
+                enjoyment of your backyard pool even on cooler days. So, don't give up; if you have a small yard,
+                consult an experienced pool construction company and utilize any space that technically allows for the
+                construction of a pool that will <a
+                  href="https://blog.d-impex.co.rs/najpopularniji-tipovi-bazena-za-dvoriste-u-2023-godini.html">adapt in
+                  shape and type to your space</a>. Keep in mind that the view of water and its sound have a calming and
+                relaxing effect.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Do you build pools
+                yourselves or use subcontractors?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p> <a href="https://blog.d-impex.co.rs/koliko-kosta-izgradnja-bazena-u-2023-godini.html">Pool
+                  construction</a> consists of several phases, from planning, designing, preparing the site, carrying
+                out construction works, making plumbing and electrical installations, constructing a machinery room,
+                final or finishing pool lining and equipping the pool basin, as well as installing the equipment
+                necessary for operation, water purification, and disinfection. It's hard for any company or individual
+                to carry out all these works without engaging subcontractors, at least for some of these phases.
+                Usually, these are construction works. So, our company handles all other phases, except for construction
+                works, from start to finish, including commissioning and user training on how to operate the equipment
+                and maintain the pool.</p>
+              <p>So, we only hire local contractors for excavation and rough construction works, as this minimizes costs
+                per user and is the most justified logistically.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-6" aria-expanded="false"><span class="accordion-title">Where will the equipment
+                for
+                my pool be installed?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>The pool equipment is placed in a special room or pit designed for this purpose, which is also created
+                during the construction of the pool in the immediate vicinity of the pool, at a distance of 5-6 meters,
+                in
+                order for the efficiency of this equipment to be maximized.</p>
+              <p>For this purpose, a part of the garage, basement, or some shed with dimensions of 2.5x1.5m can be used,
+                if
+                such rooms already exist and are not far from the pool construction site. Of course, this equipment must
+                be
+                easily accessible for operation, protected from large temperature changes, well insulated due to
+                moisture
+                and noise, and the equipment itself requires operation in a clean and dry space. It is necessary to
+                allocate
+                a part of the space for storing supplies and equipment for <a
+                  href="https://blog.d-impex.co.rs/odrzavanje-bazena.html">pool cleaning and maintenance</a>.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-7" aria-expanded="false"><span class="accordion-title">How much does it cost to
+                build a pool?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Unlike the times when a pool was a luxury affordable only to the wealthy, today it is an investment
+                that a
+                large part of the population can afford, and the price varies depending on the type of pool and level of
+                equipment. Of course, the construction method, accessibility of the yard for construction operations,
+                but
+                also a number of other factors that determine <a
+                  href="https://blog.d-impex.co.rs/koliko-kosta-izgradnja-bazena-u-2023-godini.html">the price of pool
+                  construction</a> also affect the price.
+                For some simpler forms and levels of equipment, this price ranges from 5,000 - 6,000 euros, and for
+                larger,
+                more demanding, and equipped pools made of durable materials, the price ranges from 10,000 - 20,000
+                euros.
+              </p>
+              <p>With good planning, some phases can be done later if their subsequent installation is anticipated in
+                time,
+                primarily referring to the level of equipment in the mechanical room and some of the accessories that
+                can be
+                installed later, thus breaking down the entire investment into phases.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-8" aria-expanded="false"><span class="accordion-title">What happens to the soil
+                excavated during pool construction?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>During pool construction, there is a phase in which a hole is dug for the pool, creating a temporary
+                excess
+                of soil that must be removed and taken away from the construction site or stored in such a way that the
+                same
+                soil can be later used to fill the hole around the pool and, if the owner wishes, spread around the yard
+                to
+                improve and better shape the area around the pool. This fact also affects the price of pool construction
+                because it creates additional costs, the so-called 'collateral damage', as the soil needs to be removed
+                from
+                the yard sometimes to a slightly more distant location where it can be safely disposed of.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-9" aria-expanded="false"><span class="accordion-title">How long does it take to
+                build a pool?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Considering that pool construction consists of several phases, some of which involve subcontractors,
+                the
+                construction time for a pool is not fixed because it depends on a large number of factors such as the
+                accessibility of the construction site and weather conditions. On average, this time ranges from 30 - 90
+                days, so it is necessary to plan and provide all the necessary prerequisites so that when starting this
+                project, there are as few delays and uncertainties as possible that could potentially cause an extension
+                of
+                the construction period.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-10" aria-expanded="false"><span class="accordion-title">What are the most
+                popular
+                shapes and designs of pools?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>As the cost of pool construction has become more affordable, the variety of pool shapes and designs has
+                drastically increased, so even the more complicated and demanding shapes are now more financially
+                acceptable. Our clients often combine a pool with the addition of a jacuzzi as a separate part within
+                the
+                pool used for hydrotherapy, while some prefer their pool shape to be unusual.</p>
+              <p>The most popular <a href="https://blog.d-impex.co.rs/5-razloga-da-ugradite-bazen.html">pools are those
+                  suitable for swimming</a>, which are larger in size and have standard shapes. When a pool is built
+                according to existing factory standards offered, they are also more affordable. Therefore, rectangular
+                shapes, perfect circles, and oval pools are currently the most popular.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-11" aria-expanded="false"><span class="accordion-title">What are the best
+                materials
+                for pool construction?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>When it comes to choosing materials for pool construction, we recommend using durable materials, but
+                today
+                there are also new materials on the market that are convenient and very durable, such as ISO BLOCKS,
+                which
+                are easily transportable, and their use significantly reduces the pool construction time.</p>
+              <p>Also, pools made of ready-made concrete panels are becoming increasingly popular, with a warranty
+                period of
+                up to 20 years, they are very easy to install, incredibly sturdy, and allow for the creation of various
+                shapes.</p>
+              <p>So, we would highlight, new on our market, pools made of ready-made concrete panels of various shapes
+                and
+                dimensions.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-12" aria-expanded="false"><span class="accordion-title">How do I choose the
+                right
+                contractor for pool construction?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Whenever you decide to afford yourself a pool, first consult a company with a lot of experience, so
+                that
+                they can make a pool construction plan and an adequate offer that is in line with your wishes and
+                possibilities. Companies with little or no experience simply cannot answer all the questions that are
+                put to
+                them, nor the unexpected challenges that these projects sometimes bring. So when you are considering
+                starting pool construction, you should know that it should be a one-time investment, and the work should
+                be
+                done qualitatively to last you a long time.</p>
+              <p>Contractors who offer a "turnkey" service are your best option, and if you have the opportunity to
+                engage
+                some of your own workforce for a phase of construction work, it is a way to save on construction costs.
+              </p>
+              <p>Check how many completed projects the company you want to hire has behind them. The equipment offer is
+                also
+                very important because higher quality equipment provides better and longer-lasting operation.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-13" aria-expanded="false"><span class="accordion-title">When is the best time
+                to
+                build a pool?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>If all phases of pool construction are timely planned, the construction time will be shorter. You
+                should
+                plan to start pool construction in early spring, as soon as weather conditions allow, so that you can
+                start
+                the summer swimming season and use the pool fully prepared.</p>
+              <p>If you are late, the work may take longer, both due to the availability of contractors during the
+                season
+                and due to the fact that the work itself sometimes can last up to 90 days.</p>
+              <p>Some users decide to prepare and perform rough construction work in the fall of the current year, and
+                finish work before the start of the next swimming season.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-14" aria-expanded="false"><span class="accordion-title">Does a pool add value
+                to my
+                home?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>In the post-corona era, homes with pools have gained the most value because people are increasingly
+                looking
+                for this feature in tourist offerings so that they can go with their families for a weekend, holidays,
+                or
+                vacation to a domestic destination that is isolated from the city's heat and noise, and which also
+                offers
+                various types of experiences, amenities, and a new dimension of spending time with loved ones.</p>
+              <p>The value of properties that have pools has drastically increased, so from an investment point of view,
+                it
+                is completely justified. The new value of the property is reflected not only in financial terms but also
+                in
+                the fact that when you have a pool, friends, family, and children will come to you more often, which in
+                itself brings an increase in quality of life.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-15" aria-expanded="false"><span class="accordion-title">What should I consider
+                when
+                choosing a pool for my yard?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Choosing a pool should be a task that brings satisfaction and enjoyment to the buyer in planning. So
+                don't
+                rush, make a good plan, consult with a professional company, and come up with the right solution. You
+                should
+                consider the size you want for the pool so that you leave enough space for bathers to move around it,
+                stay
+                near the pool, sunbathe, and enjoy the view of the water. Another important thing is access to
+                construction
+                operations for access to the yard, removal of soil, a place for storing materials for pool construction,
+                and
+                also the choice of a place for storing the equipment needed for pool operation, i.e., the mechanical
+                room.
+                Another important factor <a
+                  href="https://blog.d-impex.co.rs/najpopularniji-tipovi-bazena-za-dvoriste-u-2023-godini.html">when
+                  choosing a pool</a> is the type, shape, and design. Pools made of durable materials are more durable
+                but
+                also somewhat more expensive, while those not made of concrete last min. 20 years and are more
+                financially
+                accessible. Also, think ahead about how the <a
+                  href="https://blog.d-impex.co.rs/odrzavanje-bazena.html">type
+                  of pool you want is used and maintained</a>.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-16" aria-expanded="false"><span class="accordion-title">Can you make the design
+                of the pool I saw on the internet?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Today's offer of materials used in pool construction allows for the realization of almost any shape the
+                customer desires. Everything is feasible, but still, consider both the practical aspect of usage and
+                maintenance of the pool. When choosing non-standard pool shapes, your choice of finishing materials will
+                be more limited than with pools of standard shapes for which liners are factory-made in such measures.
+                On the other hand, unusual and specific shapes add an extraordinary charm and represent a unique
+                decoration in your yard.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-17" aria-expanded="false"><span class="accordion-title">How can I extend the
+                swimming season for my pool?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>The swimming season usually lasts from early May to late September, weather permitting. To avoid
+                depending on changing weather conditions and to extend the swimming season, it is necessary to provide
+                <a href="https://blog.d-impex.co.rs/temperatura-vode-u-bazenu.html">pool water heating</a> , and also
+                to install some type of <a href="https://blog.d-impex.co.rs/prekrivke-za-bazen.html">pool cover</a> to
+                retain the temperature of heated water for a longer period, thus preventing cooling and dirt
+                accumulation
+                in the pool overnight. All this can be achieved by adding a HEAT PUMP and a THERMAL COVER, as detailed
+                in our blog, with links highlighted.
+              </p>
+              <p>
+                Once you have a pool, make the most of it for as long as possible.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-18" aria-expanded="false"><span class="accordion-title">Pool construction in
+                Serbia?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Fortunately for pool users, building pools in Serbia does not require any special permits. However,
+                when
+                building a concrete pool, which is considered a permanent structure and occupies a significant portion
+                of
+                the yard, it is advisable to consult with an architect because when constructing a new structure,
+                approval
+                from the relevant authorities regarding the occupation of the plot where it is being built is required.
+                In
+                all other situations, this will not be necessary, especially since most pools are considered
+                prefabricated-demountable structures. No permits of any kind are required for prefabricated-demountable
+                structures.
+              </p>
+              <p>
+                Nevertheless, it is advisable, during the planning phase, to consult with an architect regarding
+                technical
+                capabilities and soil stability at the pool construction site. Keep in mind that some types of pools,
+                especially large ones, exert a pressure of 50 - 100 tons when filled with water.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-19" aria-expanded="false"><span class="accordion-title">Advantages of concrete
+                pools?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Of all types of pools or materials for their construction, concrete pools have proven to be the most
+                durable, but their construction is also the most expensive. When building a concrete pool, you can
+                combine
+                shapes, sometimes narrower, sometimes wider, you can combine depths, shallower in some parts for
+                children,
+                and deeper in others, you can create a seating bench in the water, a bar, partition off a section for a
+                Jacuzzi massage, literally let your imagination run wild, which is not possible with other types of
+                materials.
+              </p>
+              <p>
+                Concrete pool construction should be entrusted to professionals who will guarantee that your desires can
+                be
+                successfully realized. And for <a href="https://blog.d-impex.co.rs/moderni-bazeni.html">modern pool
+                  construction ideas</a>, check out our blog.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-20" aria-expanded="false"><span class="accordion-title">What are the most
+                popular
+                options for poolside beaches?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>In order for swimmers to enjoy the pool and its amenities, it is necessary to provide space next to the
+                pool to be used as a beach, as well as for the stay of those who do not swim but want to be near the
+                swimmers, for sun loungers, towels, or just for parents to supervise small children in the water. The
+                most
+                popular options are DECKING, imitations of wooden decking, which look very nice around the pool, are
+                easy
+                to maintain, quick to dry, and comfortable to walk, sit, or lie on. Concrete slabs are also quite common
+                lately, being the most resistant to weather conditions and wear. In addition, grass provides a natural
+                environment around the pool, so together it can be very nicely designed without the cost of beach
+                construction being high.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button id="accordion-button-21" aria-expanded="false"><span class="accordion-title">Should I install a
+                fence around my pool?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>When planning a pool and having pets, keep them away from the pool; they are curious, water attracts
+                them,
+                especially dogs. It often happens that they jump into the water and cannot get out. If owners are not
+                nearby to help them, problems can arise. It is also not good for pets to contaminate the water in which
+                children and perhaps older and more sensitive people will swim. Also, if young children are not
+                supervised,
+                it can be dangerous for them to be near the pool.
+              </p>
+              <p>
+                Installing some type of protective fence is not part of the basic pool construction package, but if you
+                see
+                a clear reason why you need a fence, it is definitely worth it. It will prevent unwanted incidents.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-22" aria-expanded="false"><span class="accordion-title">What safety features
+                should be included in pool design?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Regarding safety features, it is necessary to know that the prescribed depth according to European
+                standards for residential pools is 1.5m and if you build a pool deeper than that, you must have a
+                lifeguard
+                license. This is the most important fact when it comes to the safety of swimmers. Also, non-slip
+                materials
+                should be used around the pool because walking and running on wet surfaces result in the highest number
+                of
+                injuries and falls, which we want to avoid.
+              </p>
+              <p>
+                Installing a protective barrier for children and pets is also desirable, and pay attention to the steps
+                for
+                entering the pool, which in themselves always pose a potential risk of injury.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-23" aria-expanded="false"><span class="accordion-title">What is the difference
+                between a Jacuzzi and a whirlpool tub?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>The more popular name for whirlpool tubs is Jacuzzi, as it is actually the name of the Italian company
+                JACUZZI, which was among the first to start manufacturing these tubs and has so far developed the widest
+                range of its products (e.g., like JEEP for manufacturing JEEP-type vehicles).
+              </p>
+              <p>
+                An increasingly popular combination is to build a small part of the pool directly next to the main pool
+                or
+                as a smaller part within the main pool, which serves as a whirlpool tub equipped with massage jets, air
+                blowers, rotating massagers, etc. It is important that the user gets the feeling of being in a spa.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-24" aria-expanded="false"><span class="accordion-title">Can I add a slide to my
+                pool?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p> <a href="https://blog.d-impex.co.rs/dodatna-oprema-i-vodene-atrakcije.html">Attractions and
+                  accessories
+                  for the pool</a> such as a slide make the pleasure even greater, especially when younger
+                people are involved. The slide is one of the additional attractions that you can buy and add to your
+                pool,
+                and you just need to ensure its stability when installing.
+              </p>
+              <p>
+                You can also get and use other pool accessories such as goals, basketball hoops, volleyball nets,
+                rackets,
+                and many others in the pool.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="youtube">
       <div>
-        <p>Video instructions:</p>
+        <p>Video instructions (Serbian):</p>
         <div class="youtube-grid">
 
           <div>
             <iframe src="https://www.youtube.com/embed/MFqqoqBdfmA" loading="lazy" title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
               allowfullscreen></iframe>
           </div>
 
           <div>
             <iframe src="https://www.youtube.com/embed/bZ9jcH6Xiao" loading="lazy" title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
               allowfullscreen></iframe>
           </div>
 
           <div>
             <iframe src="https://www.youtube.com/embed/c0EhK3snZVs" loading="lazy" title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
               allowfullscreen></iframe>
           </div>
 
           <div>
             <iframe src="https://www.youtube.com/embed/hjuFsxtP7XU" loading="lazy" title="Izgradnja bazena"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
               allowfullscreen></iframe>
           </div>
 
           <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/TXEnYNA9Fxo"
               title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
               allowfullscreen></iframe>
           </div>
 
           <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/8gwPLtr3Kjk"
               title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
               allowfullscreen></iframe>
           </div>
 
           <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/8RWc93EGfx4"
               title="Kako se usisava bazen" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
               allowfullscreen></iframe>
           </div>
 
@@ -496,19 +953,19 @@
 
         <ul>
           <li>
-            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" /></div>
+            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.youtube.com/@d-impex">dejanpocek</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" /></div>
+            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.instagram.com/d_impex/">d_impex</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" /></div>
+            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.facebook.com/dimpexdoo/">dimpexdoo</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" /></div>
+            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://twitter.com/Dimpex_">Dimpex_</a>
           </li>
         </ul>

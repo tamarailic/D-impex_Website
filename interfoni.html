@@ -32,9 +32,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
+  <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+  </noscript>
 </head>
 
 <body>
@@ -158,13 +162,13 @@
           <div id="col1" class="product_info_col">
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Interfoni/interfon.jpg" alt="Audio interfoni" />
+                <img src="Interfoni/interfon.jpg" alt="Audio interfoni" loading="lazy" />
               </div>
               <p>Audio interfoni</p>
             </div>
             <div class="product_info_card">
               <div class="icon_container type_vector">
-                <img src="Interfoni/phone-call.png" alt="Interfoni Novi Sad" />
+                <img src="Interfoni/phone-call.png" alt="Interfoni Novi Sad" loading="lazy" />
               </div>
               <p>Preusmerenje poziva</p>
             </div>
@@ -172,13 +176,13 @@
           <div id="col2" class="product_info_col">
             <div class="product_info_card">
               <div class="icon_container type_vector">
-                <img src="VideoNadzor/video-nadzor-montaza.png" alt="Montaza interfona" />
+                <img src="VideoNadzor/video-nadzor-montaza.png" alt="Montaza interfona" loading="lazy" />
               </div>
               <p>Profesionalna montaža</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Interfoni/eletronske-brave.jpg" alt="Elektronske brave" />
+                <img src="Interfoni/eletronske-brave.jpg" alt="Elektronske brave" loading="lazy" />
               </div>
               <p>Elektronske brave</p>
             </div>
@@ -186,13 +190,13 @@
           <div id="col3" class="product_info_col">
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="Interfoni/bezicni-interfoni.jpg" alt="Video interfoni" />
+                <img src="Interfoni/bezicni-interfoni.jpg" alt="Video interfoni" loading="lazy" />
               </div>
               <p>Video interfoni</p>
             </div>
             <div class="product_info_card">
               <div class="icon_container type_vector">
-                <img src="Interfoni/key.png" alt="Ugradnja interfona Srbija" />
+                <img src="Interfoni/key.png" alt="Ugradnja interfona Srbija" loading="lazy" />
               </div>
               <p>Sigurnost u Vašim rukama</p>
             </div>
@@ -227,13 +231,13 @@
           <div id="col1" class="product_info_col">
             <div class="product_info_card">
               <div class="icon_container type_vector">
-                <img src="Interfoni/wifi-signal.png" alt="Bezicni interfoni" />
+                <img src="Interfoni/wifi-signal.png" alt="Bezicni interfoni" loading="lazy" />
               </div>
               <p>Bezični interfoni</p>
             </div>
             <div class="product_info_card">
               <div class="icon_container type_vector">
-                <img src="Interfoni/office-building.png" alt="Interfoni za stambene zgrade" />
+                <img src="Interfoni/office-building.png" alt="Interfoni za stambene zgrade" loading="lazy" />
               </div>
               <p>Stambene zgrade</p>
             </div>
@@ -241,7 +245,7 @@
           <div id="col2" class="product_info_col">
             <div class="product_info_card">
               <div class="icon_container_card">
-                <img src="Interfoni/interfon-tcs.png" alt="Digitalni interfoni" />
+                <img src="Interfoni/interfon-tcs.png" alt="Digitalni interfoni" loading="lazy" />
               </div>
               <p>Digitalni interfoni</p>
             </div>
@@ -249,13 +253,13 @@
           <div id="col3" class="product_info_col">
             <div class="product_info_card">
               <div class="icon_container_card type_vector">
-                <img src="Interfoni/home.png" alt="Interfoni za kuce" />
+                <img src="Interfoni/home.png" alt="Interfoni za kuce" loading="lazy" />
               </div>
               <p>Kuće</p>
             </div>
             <div class="product_info_card">
               <div class="icon_container_card type_vector">
-                <img src="Interfoni/employee.png" alt="Interfoni za poslovne prostore" />
+                <img src="Interfoni/employee.png" alt="Interfoni za poslovne prostore" loading="lazy" />
               </div>
               <p>Poslovni prostori</p>
             </div>
@@ -341,19 +345,19 @@
 
         <ul>
           <li>
-            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" /></div>
+            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.youtube.com/@d-impex">dejanpocek</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" /></div>
+            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.instagram.com/d_impex/">d_impex</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" /></div>
+            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.facebook.com/dimpexdoo/">dimpexdoo</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" /></div>
+            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://twitter.com/Dimpex_">Dimpex_</a>
           </li>
         </ul>

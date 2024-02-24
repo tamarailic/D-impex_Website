@@ -138,27 +138,27 @@ section#hero {
 }
 
 .hero-video-surveillance {
-  background-image: url('../VideoNadzor/kamere-za-kucu.jpg');
+  background-image: url('../VideoNadzor/kamere-za-kucu.webp');
 }
 
 .hero-alarm {
-  background-image: url('../AlarmniSistemi/alarmi.jpg');
+  background-image: url('../AlarmniSistemi/alarmi.webp');
 }
 
 .hero-gate-motors {
-  background-image: url('../MotoriZaKapije/motori-za-otvaranje-kapija.jpg');
+  background-image: url('../MotoriZaKapije/motori-za-otvaranje-kapija.webp');
 }
 
 .hero-intercom {
-  background-image: url('../Interfoni/interfoni-novi-sad.jpg');
+  background-image: url('../Interfoni/interfoni-novi-sad.webp');
 }
 
 .hero-access-control {
-  background-image: url('../KontrolaPristupa/kontrola-pristupa-evidencija-radnog-vremena.jpg');
+  background-image: url('../KontrolaPristupa/kontrola-pristupa-evidencija-radnog-vremena.webp');
 }
 
 .hero-swimmingpool {
-  background-image: url('../Bazeni/dvorisni-bazeni-ugradnja.jpg');
+  background-image: url('../Bazeni/dvorisni-bazeni-ugradnja.webp');
 }
 
 .hero_description_div {
@@ -402,7 +402,7 @@ h3 {
 }
 
 #bazeni {
-  background-image: url("../Bazeni/bazeni.jpg");
+  background-image: url("../Bazeni/bazeni.webp");
 }
 
 #call-to-action {
@@ -709,7 +709,7 @@ footer p {
 /* Product informations */
 
 .hero-video-surveillance {
-  background-image: url('../VideoNadzor/kamere-za-kucu.jpg');
+  background-image: url('../VideoNadzor/kamere-za-kucu.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -951,8 +951,8 @@ footer p {
 
 #faq .faq_container {
   margin: 0 auto;
-  padding: 0 4rem 6rem;
-  width: 70%;
+  padding: 0 3rem 6rem;
+  width: 60%;
 }
 
 #faq h2 {
@@ -1672,6 +1672,10 @@ footer p {
   .hero_description_div h2 {
     font-size: 1.2rem;
     margin: 1vh 0 3vh;
+  }
+
+  #faq h2 {
+    font-size: 1.2rem;
   }
 
   .stat_content {

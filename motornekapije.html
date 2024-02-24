@@ -33,9 +33,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
+  <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+  </noscript>
 </head>
 
 <body>
@@ -175,19 +179,20 @@
           <div id="col1" class="product_info_col">
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="MotoriZaKapije/dvokrilne-kapije.jpg" alt="Krilne kapije" />
+                <img src="MotoriZaKapije/dvokrilne-kapije.jpg" alt="Krilne kapije" loading="lazy" />
               </div>
               <p>Krilne kapije</p>
             </div>
             <div class="product_info_card">
               <div class="icon_container type_vector">
-                <img src="VideoNadzor/android.png" alt="Android aplikacija za motorne kapije" />
+                <img src="VideoNadzor/android.png" alt="Android aplikacija za motorne kapije" loading="lazy" />
               </div>
               <p>Android aplikacija</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="MotoriZaKapije/Comunello-garazna-vrata-noseca.jpg" alt="Motori za garazna vrata" />
+                <img src="MotoriZaKapije/Comunello-garazna-vrata-noseca.jpg" alt="Motori za garazna vrata"
+                  loading="lazy" />
               </div>
               <p>Garažna vrata</p>
             </div>
@@ -195,19 +200,20 @@
           <div id="col2" class="product_info_col">
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="MotoriZaKapije/italijanski-motori-za-kapije.jpg" alt="Italijanski motori za kapije" />
+                <img src="MotoriZaKapije/italijanski-motori-za-kapije.jpg" alt="Italijanski motori za kapije"
+                  loading="lazy" />
               </div>
               <p>Italijanski proizvođači</p>
             </div>
             <div class="product_info_card">
               <div class="icon_container type_vector">
-                <img src="MotoriZaKapije/gate.png" alt="Motori za otvaranje kapije" />
+                <img src="MotoriZaKapije/gate.png" alt="Motori za otvaranje kapije" loading="lazy" />
               </div>
               <p>Automatsko otvaranje i zatvaranje</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="MotoriZaKapije/Rampa.jpg" alt="Parking rampe" />
+                <img src="MotoriZaKapije/Rampa.jpg" alt="Parking rampe" loading="lazy" />
               </div>
               <p>Ulične barijere-parking rampe</p>
             </div>
@@ -215,19 +221,20 @@
           <div id="col3" class="product_info_col">
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="MotoriZaKapije/slider-8-.jpg" alt="Klizne kapije" />
+                <img src="MotoriZaKapije/slider-8-.jpg" alt="Klizne kapije" loading="lazy" />
               </div>
               <p>Klizne kapije</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="MotoriZaKapije/motori-za-kapije-na-daljinski.jpg" alt="Kapije na daljinsko otvaranje" />
+                <img src="MotoriZaKapije/motori-za-kapije-na-daljinski.jpg" alt="Kapije na daljinsko otvaranje"
+                  loading="lazy" />
               </div>
               <p>Daljinska kontrola</p>
             </div>
             <div class="product_info_card">
               <div class="icon_container type_vector">
-                <img src="VideoNadzor/app-store.png" alt="IOS aplikacija za motorne kapije" />
+                <img src="VideoNadzor/app-store.png" alt="IOS aplikacija za motorne kapije" loading="lazy" />
               </div>
               <p>IOS aplikacija</p>
             </div>
@@ -313,19 +320,19 @@
 
         <ul>
           <li>
-            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" /></div>
+            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.youtube.com/@d-impex">dejanpocek</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" /></div>
+            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.instagram.com/d_impex/">d_impex</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" /></div>
+            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.facebook.com/dimpexdoo/">dimpexdoo</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" /></div>
+            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://twitter.com/Dimpex_">Dimpex_</a>
           </li>
         </ul>

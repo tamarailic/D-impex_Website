@@ -32,9 +32,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
+  <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+  </noscript>
 </head>
 
 <body>
@@ -175,13 +179,14 @@
           <div id="col1" class="product_info_col">
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="KontrolaPristupa/evidencija-radnog-vremena.jpg" alt="Evidentiranje radnog vremena" />
+                <img src="KontrolaPristupa/evidencija-radnog-vremena.jpg" alt="Evidentiranje radnog vremena"
+                  loading="lazy" />
               </div>
               <p>Evidentiranje radnog vremena</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="KontrolaPristupa/dimpex.png" alt="Kontrola ulaska vozila" />
+                <img src="KontrolaPristupa/dimpex.png" alt="Kontrola ulaska vozila" loading="lazy" />
               </div>
               <p>Kontrola ulaska vozila</p>
             </div>
@@ -189,13 +194,14 @@
           <div id="col2" class="product_info_col">
             <div class="product_info_card">
               <div class="icon_container type_vector">
-                <img src="KontrolaPristupa/passcode.png" alt="Kontrola pristupa Novi Sad" />
+                <img src="KontrolaPristupa/passcode.png" alt="Kontrola pristupa Novi Sad" loading="lazy" />
               </div>
               <p>PIN kod</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="KontrolaPristupa/kontorola-pristupa-sifrom.jpg" alt="Kontrola pristupa sifrom" />
+                <img src="KontrolaPristupa/kontorola-pristupa-sifrom.jpg" alt="Kontrola pristupa sifrom"
+                  loading="lazy" />
               </div>
               <p>Pristup šifrom</p>
             </div>
@@ -203,13 +209,15 @@
           <div id="col3" class="product_info_col">
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="KontrolaPristupa/brava-na-otisak-prsta.jpg" alt="Kontrola pristupa otiskom prsta" />
+                <img src="KontrolaPristupa/brava-na-otisak-prsta.jpg" alt="Kontrola pristupa otiskom prsta"
+                  loading="lazy" />
               </div>
               <p>Pristup otiskom prsta</p>
             </div>
             <div class="product_info_card type_image">
               <div class="icon_container">
-                <img src="KontrolaPristupa/kontrola-pristupa-rfid-kartice.jpg" alt="Kontrola pristupa karticom" />
+                <img src="KontrolaPristupa/kontrola-pristupa-rfid-kartice.jpg" alt="Kontrola pristupa karticom"
+                  loading="lazy" />
               </div>
               <p>Pristup karticom</p>
             </div>
@@ -295,19 +303,19 @@
 
         <ul>
           <li>
-            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" /></div>
+            <div><img width="35" height="35" src="img/youtube.webp" alt="YouTube|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.youtube.com/@d-impex">dejanpocek</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" /></div>
+            <div><img width="35" height="35" src="img/instagram.webp" alt="Instagram|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.instagram.com/d_impex/">d_impex</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" /></div>
+            <div><img width="35" height="35" src="img/facebook.webp" alt="Facebook|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://www.facebook.com/dimpexdoo/">dimpexdoo</a>
           </li>
           <li>
-            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" /></div>
+            <div><img width="35" height="35" src="img/twitter.webp" alt="Twitter|D-impex" loading="lazy" /></div>
             <a target="_blank" href="https://twitter.com/Dimpex_">Dimpex_</a>
           </li>
         </ul>
