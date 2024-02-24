@@ -23,6 +23,7 @@ body {
   padding: 0;
   width: 100%;
   background-color: var(--AlmostWhite);
+  color: var(--DarkerGrayIntro);
 }
 
 /* Navigation Bar */
@@ -946,6 +947,129 @@ footer p {
   font-size: 1.1rem;
 }
 
+/* faq */
+
+#faq .faq_container {
+  margin: 0 auto;
+  padding: 0 4rem 6rem;
+  width: 70%;
+}
+
+#faq h2 {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -1.4px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+#faq a {
+  color: var(--Blue);
+}
+
+#faq .accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#faq .accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid var(--Blue);
+}
+
+#faq .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #51577B;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  padding-right: 30px;
+}
+
+#faq .accordion button:hover,
+#faq .accordion button:focus {
+  cursor: pointer;
+  color: var(--Blue);
+}
+
+#faq .accordion button:hover::after,
+#faq .accordion button:focus::after {
+  cursor: pointer;
+  color: var(--Blue);
+  border: 1px solid var(--Blue);
+}
+
+#faq .accordion button .accordion-title {
+  font-size: 1.4rem;
+  padding: 1em 1.5em 1em 0;
+}
+
+#faq .accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+#faq .accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+#faq .accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+#faq .accordion button[aria-expanded=true] {
+  color: var(--Blue);
+}
+
+#faq .accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+
+#faq .accordion button[aria-expanded=true]+.accordion-content {
+  opacity: 1;
+  max-height: 100%;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+#faq .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+#faq .accordion .accordion-content p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  margin: 1.2em 0;
+}
+
 @media (max-width:1700px) {
   .card {
     height: 500px;
@@ -1153,6 +1277,14 @@ footer p {
   .semi-big {
     font-size: 20px;
     line-height: 1.6;
+  }
+
+  /* FAQ */
+
+  #faq .faq_container {
+    margin: 0 auto;
+    padding: 0 4rem 6rem;
+    width: 80%;
   }
 
   /* Nav bar mobile */
@@ -1521,6 +1653,14 @@ footer p {
     line-height: 1.6;
   }
 
+  /* FAQ */
+
+  #faq .faq_container {
+    margin: 0 auto;
+    padding: 0 4rem 6rem;
+    width: 90%;
+  }
+
 }
 
 @media (max-width:650px) {
@@ -1583,6 +1723,14 @@ footer p {
 
   .window .header {
     position: fixed;
+  }
+
+  /* FAQ */
+
+  #faq .faq_container {
+    margin: 0 auto;
+    padding: 0 4rem 6rem;
+    width: 100%;
   }
 }
 
