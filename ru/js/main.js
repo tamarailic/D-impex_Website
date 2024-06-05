@@ -2,7 +2,6 @@
     let burger = document.querySelector('.burger-container');
     let header = document.querySelector('.header');
     let menu = document.querySelector('.menu')
-
     burger.onclick = function () {
         header.classList.toggle('menu-opened');
         menu.classList.toggle('hide');
@@ -18,7 +17,6 @@ function changeLanguage() {
     } else {
         newUrl = `https://${languageSelected.toLowerCase()}.d-impex${currentUrl.split('d-impex')[1]}`;
     }
-
     window.location.href = newUrl;
 }
 
@@ -31,14 +29,11 @@ function changeLanguageMobile() {
     } else {
         newUrl = `https://${languageSelected.toLowerCase()}.d-impex${currentUrl.split('d-impex')[1]}`;
     }
-
     window.location.href = newUrl;
 }
 
 // FAQ
-
 const items = document.querySelectorAll(".accordion button");
-
 function toggleAccordion() {
     const itemToggle = this.getAttribute('aria-expanded');
 
@@ -50,5 +45,4 @@ function toggleAccordion() {
         this.setAttribute('aria-expanded', 'true');
     }
 }
-
 items.forEach(item => item.addEventListener('click', toggleAccordion));

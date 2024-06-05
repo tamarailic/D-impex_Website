@@ -23,6 +23,7 @@ body {
   padding: 0;
   width: 100%;
   background-color: var(--AlmostWhite);
+  color: var(--DarkerGrayIntro);
 }
 
 /* Navigation Bar */
@@ -34,7 +35,7 @@ body {
 nav {
   background-color: var(--DarkGray);
   grid-template-columns: 1fr 8fr 1fr;
-  padding: 10px 4%;
+  padding: 10px 10%;
   filter: var(--ShadowLight);
   z-index: 9;
 }
@@ -50,7 +51,7 @@ nav>ul>li>a {
   color: var(--AlmostWhite);
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  font-size: .8rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -261,7 +262,7 @@ h3 {
 }
 
 .stat_text {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -366,7 +367,7 @@ h3 {
 .main_button {
   background-color: var(--DarkerBlue);
   color: var(--AlmostWhite);
-  font-size: .9rem;
+  font-size: 1.1rem;
   font-weight: normal;
   filter: var(--ShadowLight);
 }
@@ -1101,7 +1102,7 @@ footer p {
   }
 
   .stat_text {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .product_info {
@@ -1673,12 +1674,16 @@ footer p {
     margin: 1vh 0 3vh;
   }
 
+  #faq h2 {
+    font-size: 1.2rem;
+  }
+
   .stat_content {
     font-size: 1.6rem;
   }
 
   .stat_text {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .icon_container_wrap {

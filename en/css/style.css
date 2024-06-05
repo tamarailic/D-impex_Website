@@ -23,6 +23,7 @@ body {
   padding: 0;
   width: 100%;
   background-color: var(--AlmostWhite);
+  color: var(--DarkerGrayIntro);
 }
 
 /* Navigation Bar */
@@ -1671,6 +1672,10 @@ footer p {
   .hero_description_div h2 {
     font-size: 1.2rem;
     margin: 1vh 0 3vh;
+  }
+
+  #faq h2 {
+    font-size: 1.2rem;
   }
 
   .stat_content {
