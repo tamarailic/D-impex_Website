@@ -557,8 +557,8 @@ body {
   display: none;
 }
 
-.form_thank_you_active {
-  display: flex;
+.form_active {
+  display: flex !important;
 }
 
 .form_thank_you>img {
@@ -645,6 +645,17 @@ body {
   max-width: 150px;
   font-weight: bold;
   font-size: 16px;
+}
+
+.form_error {
+  color: #ff2c2c;
+  margin: 0;
+  font-size: 12px;
+  display: none;
+}
+
+.form_field_error {
+  border: 1px solid #ff2c2c !important;
 }
 
 .focus_button {

@@ -10,6 +10,9 @@ Parameters:
   SharedLayerName:
     Type: String
     Default: dimpex-dependencies
+  StaticResourcesBucketName:
+    Type: String
+    Default: static-resources-dimpex
 
 Globals:
   Function:
@@ -31,6 +34,27 @@ Resources:
           - "*"
         AllowHeaders:
           - "*"
+
+  StaticResourcesBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref StaticResourcesBucketName
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+  StaticResourcesBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref StaticResourcesBucket
+      PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal: "*"
+            Action:
+              - s3:GetObject
+            Resource: !Sub "arn:aws:s3:::${StaticResourcesBucketName}/*"
 
   SharedLayers:
     Type: AWS::Serverless::LayerVersion
@@ -85,12 +109,40 @@ Resources:
       FunctionName: !Ref SendEmailFunction
       Principal: sns.amazonaws.com
 
+  SendTemplatedEmailFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: send_templated_email/
+      Handler: app.lambda_handler
+      Layers:
+        - !Ref SharedLayers
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AmazonSESFullAccess
+  SendTemplatedEmailFunctionLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${SendTemplatedEmailFunction}"
+      RetentionInDays: 90
+  TopicConsumerSendTemplatedEmailFunctionPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !Ref SendTemplatedEmailFunction
+      Principal: sns.amazonaws.com
+
   BasicEmailSNSTopic:
     Type: AWS::SNS::Topic
     Properties:
       Subscription:
         - Protocol: lambda
           Endpoint: !GetAtt SendEmailFunction.Arn
+  TemplateEmailSNSTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      Subscription:
+        - Protocol: lambda
+          Endpoint: !GetAtt SendTemplatedEmailFunction.Arn
 
   # EmailLambda
   EmailLambda:
@@ -104,11 +156,14 @@ Resources:
         Variables:
           LEADS_TABLE: !Ref LeadsTableName
           BASIC_EMAIL_TOPIC: !Ref BasicEmailSNSTopic
+          TEMPLATE_EMAIL_TOPIC: !Ref TemplateEmailSNSTopic
       Policies:
         - AWSLambdaBasicExecutionRole
         - AmazonDynamoDBFullAccess
         - SNSPublishMessagePolicy:
             TopicName: !GetAtt BasicEmailSNSTopic.TopicName
+        - SNSPublishMessagePolicy:
+            TopicName: !GetAtt TemplateEmailSNSTopic.TopicName
       Events:
         ApiGateway:
           Type: HttpApi

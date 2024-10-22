@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email confirmation D-impex</title>
+
+    <style>
+        .main {
+            margin: auto;
+            color: #213343;
+            width: 600px;
+            padding: 40px 30px;
+            background-color: #fcfcfc;
+            height: 100%;
+            width: 600px;
+            border-radius: 16px;
+            font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 600px;
+            padding-bottom: 20px;
+        }
+
+        .top h1 {
+            width: 300px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .top p {
+            width: 300px;
+            text-align: right;
+            font-size: 16px;
+            font-weight: 400;
+            padding-right: 20px;
+        }
+
+        h2 {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-size: 36px;
+            line-height: 1.1em;
+        }
+
+        .info {
+            color: #145ec0;
+            padding-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .data p {
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+
+        .end {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 30px;
+        }
+
+        .end p {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="top">
+            <h1>Email potvrda</h1>
+            <p>{{emailDate}}</p>
+        </div>
+        <h2>{{senderName}}</h2>
+        <p class="info">Poruka koju ste poslali sadrži:</p>
+        <div class="data">
+            <p>Tip: Zahtev</p>
+            <p>Ime: {{senderName}}</p>
+            <p>Kompanija: {{senderCompany}}</p>
+            <p>Email: {{senderEmail}}</p>
+            <p>Poruka: &nbsp; {{senderMessage}}</p>
+        </div>
+        <div class="end">
+            <p>Hvala Vam na ukazanom poverenju!</p>
+            <img src="https://static-resources-dimpex.s3.eu-central-1.amazonaws.com/dimpex_logo.png" width="200"
+                height="47.15" alt="D-impex" />
+        </div>
+    </div>
+</body>
+
+</html>

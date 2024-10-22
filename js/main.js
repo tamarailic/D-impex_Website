@@ -147,15 +147,51 @@ document.getElementById("form").addEventListener("submit", async function (e) {
 
     const form = document.getElementById("form");
     const formSubmitted = document.querySelector('.form_thank_you');
-    const name = document.querySelector('.form_name').value;
-    const company = document.querySelector('.form_company').value;
-    const email = document.querySelector('.form_email').value;
-    const message = document.querySelector('.form_message').value;
+    const nameField = document.querySelector('.form_name');
+    const companyField = document.querySelector('.form_company');
+    const emailField = document.querySelector('.form_email');
+    const messageField = document.querySelector('.form_message');
+
+    const nameError = document.querySelector('.name_error');
+    if (nameField.value.trim().length == 0) {
+        nameError.classList.toggle('form_active', true);
+        nameField.classList.toggle('form_field_error', true);
+    } else {
+        nameField.classList.toggle('form_field_error', false);
+    }
+
+    const emailError = document.querySelector('.email_error');
+    if (emailField.value.trim().length == 0) {
+        emailError.classList.toggle('form_active', true);
+        emailField.classList.toggle('form_field_error', true);
+    } else {
+        emailField.classList.toggle('form_field_error', false);
+        const emailInvalidError = document.querySelector('.email_invalid_error');
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            emailInvalidError.classList.toggle('form_active', true);
+            emailField.classList.toggle('form_field_error', true);
+        } else {
+            emailField.classList.toggle('form_field_error', false);
+        }
+    }
+
+    const messageError = document.querySelector('.message_error');
+    if (messageField.value.trim().length == 0) {
+        messageError.classList.toggle('form_active', true);
+        messageField.classList.toggle('form_field_error', true);
+    } else {
+        messageField.classList.toggle('form_field_error', false);
+    }
+
+    if (nameField.value.trim().length == 0 || emailField.value.trim().length == 0 || !emailRegex.test(email) || messageField.value.trim().length == 0) {
+        return;
+    }
 
     try {
-        await sendEmail(name, email, company, message);
+        await sendEmail(nameField.value, emailField.value, companyField.value, messageField.value);
         form.classList.toggle('form_submitted', true);
-        formSubmitted.classList.toggle('form_thank_you_active', true);
+        formSubmitted.classList.toggle('form_active', true);
     } catch (error) {
         // Empty
     }

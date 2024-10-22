@@ -1,13 +1,14 @@
 import boto3
 import json
+from utils import admin_email
 
 ses_client = boto3.client("ses")
 
 def lambda_handler(event, context):
     body = json.loads(event["Records"][0]["Sns"]["Message"])
 
-    sender_name = "D-impex Webiste Notifikacija"
-    sender_email = "uros@startstudentventures.com"
+    sender_name = "D-impex Veb Notifikacija"
+    sender_email = admin_email
     recipients = [body['recipient']]
     subject = body["subject"]
     content_body = body["content"]

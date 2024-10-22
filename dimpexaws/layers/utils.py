@@ -1,7 +1,6 @@
 import json
 
-# admin_email = 'office@d-impex.co.rs'
-admin_email = 'uros.pocek@gmail.com'
+admin_email = 'office@d-impex.co.rs'
 
 def create_response(status, body):
     return { 

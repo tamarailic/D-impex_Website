@@ -19,6 +19,15 @@ manifest_hash = ""
 packagetype = "Zip"
 functions = ["SendEmailFunction"]
 
+[function_build_definitions.9ac19a8a-6d1d-4724-bdbf-9ece9d1dd4c0]
+codeuri = "/Users/urospocek/Documents/Projects/MyProjects/D-impex_Website/dimpexaws/send_templated_email"
+runtime = "python3.9"
+architecture = "x86_64"
+handler = "app.lambda_handler"
+manifest_hash = ""
+packagetype = "Zip"
+functions = ["SendTemplatedEmailFunction"]
+
 [layer_build_definitions.86d26b02-99ac-4c8d-8d01-e21b283649fa]
 layer_name = "SharedLayers"
 codeuri = "/Users/urospocek/Documents/Projects/MyProjects/D-impex_Website/dimpexaws/layers"

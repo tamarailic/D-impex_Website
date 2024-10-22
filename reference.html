@@ -351,6 +351,7 @@
                             <div class="input-wrapper">
                                 <input class="form_name" type="text" name="name" id="name" />
                             </div>
+                            <p class="form_error name_error">Ime je obavezno</p>
                         </div>
                         <div>
                             <label for="company">Kompanija</label>
@@ -365,6 +366,8 @@
                             <div class="input-wrapper">
                                 <input class="form_email" type="email" name="email" id="email" />
                             </div>
+                            <p class="form_error email_error">Email je obavezan</p>
+                            <p class="form_error email_invalid_error">Email nije u odgovarajućem obliku</p>
                         </div>
                     </div>
                     <div>
@@ -372,6 +375,7 @@
                             <label for="message">Poruka <span>*</span></label>
                             <textarea class="form_message" name="message" id="message" rows="6"></textarea>
                         </div>
+                        <p class="form_error message_error">Poruka je obavezana</p>
                     </div>
                     <div class="form_submit_container">
                         <input type="submit" value="Pošalji" />
