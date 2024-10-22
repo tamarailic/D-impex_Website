@@ -2,6 +2,7 @@ import os
 import boto3
 import json
 from datetime import datetime
+import pytz
 from utils import create_response, admin_email
 
 sns_client = boto3.client("sns")
@@ -47,7 +48,8 @@ def send_email(user_name, user_email, user_company, user_message):
     )
 
 def send_template_email(user_name, user_email, user_company, user_message):
-    current_date = datetime.now()
+    belgrade_tz = pytz.timezone('Europe/Belgrade')
+    current_date = datetime.now(belgrade_tz)
     formatted_date = current_date.strftime("%d.%m.%Y")
     data = json.dumps({'emailDate': formatted_date, 'senderName': user_name, 'senderCompany': user_company, 'senderEmail': user_email, 'senderMessage': user_message})
     sns_client.publish(

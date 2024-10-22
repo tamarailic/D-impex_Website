@@ -6,7 +6,7 @@ codeuri = "/Users/urospocek/Documents/Projects/MyProjects/D-impex_Website/dimpex
 runtime = "python3.9"
 architecture = "x86_64"
 handler = "app.lambda_handler"
-manifest_hash = ""
+manifest_hash = "07c1a5bba43ad4584fb3d7ee0be01799"
 packagetype = "Zip"
 functions = ["EmailLambda"]
 
