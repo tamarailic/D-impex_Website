@@ -157,6 +157,7 @@ document.getElementById("form").addEventListener("submit", async function (e) {
         nameError.classList.toggle('form_active', true);
         nameField.classList.toggle('form_field_error', true);
     } else {
+        nameError.classList.toggle('form_active', false);
         nameField.classList.toggle('form_field_error', false);
     }
 
@@ -165,15 +166,18 @@ document.getElementById("form").addEventListener("submit", async function (e) {
         emailError.classList.toggle('form_active', true);
         emailField.classList.toggle('form_field_error', true);
     } else {
+        emailError.classList.toggle('form_active', false);
         emailField.classList.toggle('form_field_error', false);
         const emailInvalidError = document.querySelector('.email_invalid_error');
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            emailInvalidError.classList.toggle('form_active', true);
-            emailField.classList.toggle('form_field_error', true);
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            emailInvalidError.classList.add('form_active');
+            emailField.classList.add('form_field_error');
         } else {
-            emailField.classList.toggle('form_field_error', false);
+            emailInvalidError.classList.remove('form_active');
+            emailField.classList.remove('form_field_error');
         }
+
     }
 
     const messageError = document.querySelector('.message_error');
@@ -181,6 +185,7 @@ document.getElementById("form").addEventListener("submit", async function (e) {
         messageError.classList.toggle('form_active', true);
         messageField.classList.toggle('form_field_error', true);
     } else {
+        messageError.classList.toggle('form_active', false);
         messageField.classList.toggle('form_field_error', false);
     }
 
