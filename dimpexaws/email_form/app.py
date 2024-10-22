@@ -29,6 +29,7 @@ def lambda_handler(event, context):
     )
 
     send_email(body['name'], body['email'], body.get('company', ''), body['message'])
+    send_template_email(body['name'], body['email'], body.get('company', ''), body['message'])
 
     return create_response(200, {'message': 'OK'})
 

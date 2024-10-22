@@ -162,22 +162,12 @@ document.getElementById("form").addEventListener("submit", async function (e) {
     }
 
     const emailError = document.querySelector('.email_error');
-    if (emailField.value.trim().length == 0) {
+    if (emailField.value.trim().length == 0 || !emailField.value.includes('@')) {
         emailError.classList.toggle('form_active', true);
         emailField.classList.toggle('form_field_error', true);
     } else {
         emailError.classList.toggle('form_active', false);
         emailField.classList.toggle('form_field_error', false);
-        const emailInvalidError = document.querySelector('.email_invalid_error');
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(email)) {
-            emailInvalidError.classList.add('form_active');
-            emailField.classList.add('form_field_error');
-        } else {
-            emailInvalidError.classList.remove('form_active');
-            emailField.classList.remove('form_field_error');
-        }
-
     }
 
     const messageError = document.querySelector('.message_error');
@@ -189,7 +179,7 @@ document.getElementById("form").addEventListener("submit", async function (e) {
         messageField.classList.toggle('form_field_error', false);
     }
 
-    if (nameField.value.trim().length == 0 || emailField.value.trim().length == 0 || !emailRegex.test(email) || messageField.value.trim().length == 0) {
+    if (nameField.value.trim().length == 0 || emailField.value.trim().length == 0 || messageField.value.trim().length == 0) {
         return;
     }
 
