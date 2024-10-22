@@ -1,0 +1,123 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  dimpex_aws
+
+Parameters:
+  LeadsTableName:
+    Type: String
+    Default: Dimpex-Leads
+  SharedLayerName:
+    Type: String
+    Default: dimpex-dependencies
+
+Globals:
+  Function:
+    Timeout: 29
+    MemorySize: 256
+    Runtime: python3.9
+    Architectures:
+      - x86_64
+
+Resources:
+  ApiGatewayApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      StageName: Prod
+      CorsConfiguration:
+        AllowMethods:
+          - "*"
+        AllowOrigins:
+          - "*"
+        AllowHeaders:
+          - "*"
+
+  SharedLayers:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: !Ref SharedLayerName
+      Description: Utilities for Dimpex
+      ContentUri: layers/
+      CompatibleRuntimes:
+        - python3.9
+      LicenseInfo: MIT
+      RetentionPolicy: Retain
+    Metadata:
+      BuildMethod: python3.9
+
+  LeadsDynamoDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Ref LeadsTableName
+      AttributeDefinitions:
+        - AttributeName: email
+          AttributeType: S
+        - AttributeName: timestamp
+          AttributeType: S
+      KeySchema:
+        - AttributeName: email
+          KeyType: HASH
+        - AttributeName: timestamp
+          KeyType: RANGE
+      BillingMode: PAY_PER_REQUEST
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
+
+  SendEmailFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: send_email/
+      Handler: app.lambda_handler
+      Layers:
+        - !Ref SharedLayers
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AmazonSESFullAccess
+  SendEmailFunctionLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${SendEmailFunction}"
+      RetentionInDays: 90
+  TopicConsumerFunctionPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !Ref SendEmailFunction
+      Principal: sns.amazonaws.com
+
+  BasicEmailSNSTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      Subscription:
+        - Protocol: lambda
+          Endpoint: !GetAtt SendEmailFunction.Arn
+
+  # EmailLambda
+  EmailLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: email_form/
+      Handler: app.lambda_handler
+      Layers:
+        - !Ref SharedLayers
+      Environment:
+        Variables:
+          LEADS_TABLE: !Ref LeadsTableName
+          BASIC_EMAIL_TOPIC: !Ref BasicEmailSNSTopic
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AmazonDynamoDBFullAccess
+        - SNSPublishMessagePolicy:
+            TopicName: !GetAtt BasicEmailSNSTopic.TopicName
+      Events:
+        ApiGateway:
+          Type: HttpApi
+          Properties:
+            Path: /api/email
+            Method: post
+            ApiId: !Ref ApiGatewayApi
+  EmailLambdaLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${EmailLambda}"
+      RetentionInDays: 90
