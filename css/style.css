@@ -248,8 +248,9 @@ body {
 .case_info .case_row {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   padding-left: 16px;
+  margin-bottom: 8px;
 }
 
 .case_info .case_row p {
@@ -704,8 +705,21 @@ nav>ul>li>a {
   color: var(--AlmostWhite);
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-decoration: none;
+}
+
+nav>ul>li>a:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 2px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav>ul>li>a:hover:after {
+  width: 100%;
 }
 
 .logo_div {
@@ -1082,7 +1096,7 @@ h3 {
 .white_button {
   font-size: 1.1rem;
   background-color: var(--AlmostWhite);
-  color: var(--DarkGray);
+  color: var(--Primary);
   align-self: center;
   text-decoration: none;
 }
@@ -1232,7 +1246,7 @@ h3 {
 footer {
   font-size: 1.1rem;
   color: var(--AlmostWhite);
-  background-color: var(--DarkGray);
+  background-color: var(--Primary);
 }
 
 footer p {
@@ -1324,20 +1338,20 @@ footer p {
 #contact-info h1 {
   font-size: 2.3rem;
   font-weight: 500;
-  color: var(--DarkGray);
+  color: var(--Primary);
 }
 
 .contact-details p {
   font-size: 1.6rem;
   font-weight: 500;
-  color: var(--DarkGray);
+  color: var(--Primary);
   padding: 10px;
 }
 
 .contact-details a {
   text-decoration: none;
   transition: all 250ms;
-  color: var(--DarkGray);
+  color: var(--Primary);
   font-weight: normal;
 }
 
